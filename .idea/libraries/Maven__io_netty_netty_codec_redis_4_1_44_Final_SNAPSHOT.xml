@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.netty:netty-codec-redis:4.1.44.Final-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-redis/4.1.44.Final-SNAPSHOT/netty-codec-redis-4.1.44.Final-20191210.104839-64.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-redis/4.1.44.Final-SNAPSHOT/netty-codec-redis-4.1.44.Final-20191210.104839-64-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-redis/4.1.44.Final-SNAPSHOT/netty-codec-redis-4.1.44.Final-20191210.104839-64-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="7b217d9a-915a-4445-808b-d54faaa4315b" />
+      <option name="name" value="7b217d9a-915a-4445-808b-d54faaa4315b" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="e28b1214-77b1-4324-80ad-e68f1080c902" />
+      <option name="name" value="e28b1214-77b1-4324-80ad-e68f1080c902" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/repositories/central/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="25fd9c33-f3db-47c2-b41b-61f2c62d896a" />
+      <option name="name" value="25fd9c33-f3db-47c2-b41b-61f2c62d896a" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ccf94f9e-034c-4765-b1d2-2e51320be7ee" />
+      <option name="name" value="ccf94f9e-034c-4765-b1d2-2e51320be7ee" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
