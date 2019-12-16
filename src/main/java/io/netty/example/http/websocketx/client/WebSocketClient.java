@@ -89,6 +89,7 @@ public final class WebSocketClient {
             sslCtx = SslContextBuilder.forClient().trustManager(InsecureTrustManagerFactory.INSTANCE).build();
         } else {
             sslCtx = null;
+            System.out.println("test");
         }
 
         EventLoopGroup group = new NioEventLoopGroup();
