@@ -50,7 +50,7 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
 //        if (sslCtx != null) {
 //            pipeline.addLast(sslCtx.newHandler(ch.alloc()));
 //        }
-        String sChatPath = (System.getProperty("user.dir")+ "/src/main/java/io/netty/example/http/websocketx/conf/twoway/sChat.jks");
+        String sChatPath = (System.getProperty("user.dir")+ "/cert/twoway/sChat.jks");
 
         SSLEngine engine = SecureChatSslContextFactory.getServerContext(sChatPath,sChatPath).createSSLEngine();
         engine.setUseClientMode(false);//设置服务端模式
