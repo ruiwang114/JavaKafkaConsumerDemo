@@ -25,6 +25,7 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslHandler;
+import org.apache.kafka.clients.producer.Producer;
 
 import javax.net.ssl.SSLEngine;
 
@@ -34,7 +35,11 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
 
     private static final String WEBSOCKET_PATH = "/websocket";
 
+    private Producer<String, String> kafkaProducer;
 
+    public WebSocketServerInitializerSSL(Producer<String, String> kafkaProducer) {
+        this.kafkaProducer = kafkaProducer;
+    }
 
     @Override
     public void initChannel(SocketChannel ch) throws Exception {
@@ -54,6 +59,6 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
         pipeline.addLast(new WebSocketServerCompressionHandler());
         pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
         pipeline.addLast(new WebSocketIndexPageHandler(WEBSOCKET_PATH));
-        pipeline.addLast(new WebSocketFrameHandler());
+        pipeline.addLast(new WebSocketFrameHandler(kafkaProducer));
     }
 }

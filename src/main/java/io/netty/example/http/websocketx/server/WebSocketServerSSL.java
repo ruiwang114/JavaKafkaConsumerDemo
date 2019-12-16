@@ -25,6 +25,9 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
+import org.apache.kafka.clients.producer.Producer;
+
+import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
 
 /**
  * An HTTP server which serves Web Socket requests at:
@@ -60,7 +63,8 @@ public final class WebSocketServerSSL {
 //        } else {
 //            sslCtx = null;
 //        }
-
+        Producer<String, String> producer=InitConnect();
+//        kafkaSend(producer,"test");
 
 
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
@@ -70,7 +74,7 @@ public final class WebSocketServerSSL {
             b.group(bossGroup, workerGroup)
              .channel(NioServerSocketChannel.class)
              .handler(new LoggingHandler(LogLevel.INFO))
-             .childHandler(new WebSocketServerInitializerSSL());
+             .childHandler(new WebSocketServerInitializerSSL(producer));
 
 //            Channel ch = b.bind(PORT).sync().channel();
             Channel ch = b.bind(8443).sync().channel();

@@ -169,6 +169,24 @@
       <groupId>com.sun.activation</groupId>
       <artifactId>javax.activation</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.10</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka_2.12</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>
@@ -185,8 +203,8 @@
             -classpath %classpath
             ${argLine.leak}
             ${argLine.coverage}
-            ${argLine.example}
-            ${exampleClass}
+            <!--${argLine.example}-->
+            <!--${exampleClass}-->
           </commandlineArgs>
         </configuration>
       </plugin>
