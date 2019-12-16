@@ -79,9 +79,7 @@ public final class WebSocketServerSSL {
 //            Channel ch = b.bind(PORT).sync().channel();
             Channel ch = b.bind(8443).sync().channel();
 
-            System.out.println("Open your web browser and navigate to " +
-//                    (SSL? "https" : "http") + "://127.0.0.1:" + PORT + '/');
-                    ("https" ) + "://127.0.0.1:" + 8443 + '/');
+            System.out.println("Open your web browser and navigate to " + "https" + "://127.0.0.1:" + 8443 + '/');
 
             ch.closeFuture().sync();
         } finally {
