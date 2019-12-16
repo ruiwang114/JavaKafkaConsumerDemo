@@ -26,8 +26,10 @@ import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
 import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 
 import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
+import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.kafkaSend;
 
 /**
  * An HTTP server which serves Web Socket requests at:
@@ -52,7 +54,7 @@ public final class WebSocketServerSSL {
 
     static final boolean SSL = System.getProperty("ssl") != null;
     static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8080"));
-
+    static Producer<String, String> producer=null;
     public static void main(String[] args) throws Exception {
         // Configure SSL.
 //        final SslContext sslCtx;
@@ -63,7 +65,7 @@ public final class WebSocketServerSSL {
 //        } else {
 //            sslCtx = null;
 //        }
-        Producer<String, String> producer=InitConnect();
+        producer=InitConnect();
 //        kafkaSend(producer,"test");
 
 
@@ -76,12 +78,12 @@ public final class WebSocketServerSSL {
              .handler(new LoggingHandler(LogLevel.INFO))
              .childHandler(new WebSocketServerInitializerSSL(producer));
 
-//            Channel ch = b.bind(PORT).sync().channel();
             Channel ch = b.bind(8443).sync().channel();
 
             System.out.println("Open your web browser and navigate to " + "https" + "://127.0.0.1:" + 8443 + '/');
 
             ch.closeFuture().sync();
+
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();

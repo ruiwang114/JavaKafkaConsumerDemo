@@ -1,5 +1,4 @@
 package io.netty.example.http.websocketx.twoway;
-
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 

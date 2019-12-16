@@ -2,13 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/checkstyle-checker.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/checkstyle-header.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/checkstyle-result.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_43_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL2.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_44_Final_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_osx_x86_64_2_0_28_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_osx_x86_64_2_0_26_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_44_Final_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/netty-example.iml" afterPath="$PROJECT_DIR$/netty-example.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClient.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClient.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientInitializer.java" />
@@ -16,6 +52,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerInitializer.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatSslContextFactory.java" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatSslContextFactory.java" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-checker.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-header.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-result.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +72,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KafkaClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java">
+      <file leaf-file-name="WebSocketServerSSL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,90 +85,12 @@
       <file leaf-file-name="WebSocketServerInitializerSSL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="61" column="39" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state relative-caret-position="538">
+              <caret line="67" column="11" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="67" selection-end-column="11" />
               <folding>
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1692#1693#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1836#1837#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketClientSSL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="58" column="87" lean-forward="false" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
-              <folding>
-                <marker date="1576420922280" expanded="true" signature="3450:3670" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketClientHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketServerInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketFrameHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketFrameHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-              <folding>
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketServerSSL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#3590#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="netty-ssl.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="91" column="36" lean-forward="false" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +98,22 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="205" column="12" lean-forward="false" selection-start-line="205" selection-start-column="16" selection-end-line="206" selection-end-column="31" />
+            <state relative-caret-position="-117">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1170#1185#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,6 +126,8 @@
       <find>setUseClientMode</find>
       <find>SSLEngine</find>
       <find>startTls</find>
+      <find>jetty</find>
+      <find>io.netty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,19 +147,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatServerInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketFrameHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt" />
         <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" />
       </list>
     </option>
   </component>
@@ -221,6 +197,9 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dcheckstyle.skip=true" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="-1920" />
@@ -339,6 +318,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="netty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -359,8 +342,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.netty.example.http.websocketx.server" />
       <recent name="io.netty.example.http.websocketx.client" />
+      <recent name="io.netty.example.http.websocketx.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx" />
@@ -379,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebSocketClientSSL">
+  <component name="RunManager" selected="Application.WebSocketClientSSL2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -425,14 +408,14 @@
       <module name="netty-example" />
       <envs />
     </configuration>
-    <configuration name="SecureChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="WebSocketClientSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.twoway.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.twoway.SecureChatServer" />
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.client.WebSocketClientSSL" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -444,14 +427,14 @@
       <module name="netty-example" />
       <envs />
     </configuration>
-    <configuration name="WebSocketClientSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="WebSocketClientSSL2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="io.netty.example.http.websocketx.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.client.WebSocketClientSSL" />
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.client.WebSocketClientSSL2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -557,19 +540,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SecureChatServer" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SecureChatClient" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WebSocketServerSSL" />
-      <item index="3" class="java.lang.String" itemvalue="Application.WebSocketClientSSL" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KafkaClient" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SecureChatClient" />
+      <item index="1" class="java.lang.String" itemvalue="Application.WebSocketServerSSL" />
+      <item index="2" class="java.lang.String" itemvalue="Application.WebSocketClientSSL" />
+      <item index="3" class="java.lang.String" itemvalue="Application.KafkaClient" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WebSocketClientSSL2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.WebSocketClientSSL" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SecureChatClient" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WebSocketClientSSL2" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WebSocketClientSSL" />
         <item index="2" class="java.lang.String" itemvalue="Application.WebSocketServerSSL" />
-        <item index="3" class="java.lang.String" itemvalue="Application.KafkaClient" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SecureChatServer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SecureChatClient" />
+        <item index="4" class="java.lang.String" itemvalue="Application.KafkaClient" />
       </list>
     </recent_temporary>
   </component>
@@ -586,7 +569,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576046672653</updated>
-      <workItem from="1576046674017" duration="35307000" />
+      <workItem from="1576046674017" duration="51758000" />
     </task>
     <task id="LOCAL-00001" summary="1215">
       <created>1576400116193</created>
@@ -609,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1576462137415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="121511">
+      <created>1576462660529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576462660529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35307000" />
+    <option name="totallyTimeSpent" value="51758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -626,31 +616,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24085365" sideWeight="0.50692225" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.50692225" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.495116" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.49307775" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.49520767" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24085365" sideWeight="0.49307775" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24085365" sideWeight="0.49307775" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19169329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.495116" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398374" sideWeight="0.495116" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -686,27 +675,11 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/benchmarkserver/WebSocketServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/benchmarkserver/WebSocketServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http2/tiles/HttpServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -831,14 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="83" column="42" lean-forward="false" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1003,54 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="58" column="87" lean-forward="false" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
-          <folding>
-            <marker date="1576420922280" expanded="true" signature="3450:3670" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="61" column="39" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketFrameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding>
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/helloworld/HttpHelloWorldServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
@@ -1067,35 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="205" column="12" lean-forward="false" selection-start-line="205" selection-start-column="16" selection-end-line="206" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#3590#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1104,11 +992,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway/SecureChatClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="91" column="36" lean-forward="false" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.3.1/kafka-clients-2.3.1.jar!/org/apache/kafka/clients/producer/Producer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="117" column="12" lean-forward="false" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="45" column="96" lean-forward="true" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+          <folding>
+            <element signature="e#1344#1345#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-430">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializerSSL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="67" column="11" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="67" selection-end-column="11" />
+          <folding>
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1170#1185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,7 +1167,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

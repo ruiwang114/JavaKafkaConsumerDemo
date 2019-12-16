@@ -1,9 +1,0 @@
-#Mon Dec 16 10:07:16 CST 2019
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientHandler.java=1575973965000
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/server/WebSocketIndexPageHandler.java=1575973965000
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerIndexPage.java=1575973965000
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/server/package-info.java=1575973965000
-module-resource*?\:/io/netty/suppressions.xml=2FABD81D219BF019C659A4A6ACE87022CE88CE54
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/client/WebSocketClient.java=1576344315000
-/Users/aRi/Downloads/netty-4.1/example/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerInitializer.java=1576417421000
-configuration*?=41D8F65A8EAC335A2723A74D4F1F3597883277B0

@@ -32,7 +32,7 @@ public class KafkaClient {
         props.put("compression.type", "lz4");
 //        props.put("client.id", "producer"+random());
 
-        Producer<String, String> producer = new KafkaProducer<>(props);
+        Producer<String, String> producer = new KafkaProducer<String,String>(props);
         return producer;
     }
 

@@ -30,10 +30,7 @@ import io.netty.handler.codec.http.HttpClientCodec;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.websocketx.*;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketClientCompressionHandler;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.SslHandler;
-import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 
 import javax.net.ssl.SSLEngine;
 import java.io.BufferedReader;
@@ -53,7 +50,7 @@ import java.net.URI;
  * You don't have to specify any arguments if you want to connect to the example WebSocket server,
  * as this is the default.
  */
-public final class WebSocketClientSSL {
+public final class WebSocketClientSSL2 {
 
 //    static final String URL = System.getProperty("url", "wss://127.0.0.1:8443/websocket");
     static final String URL = System.getProperty("url", "wss://127.0.0.1:8443/websocket");

@@ -26,8 +26,11 @@ import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketSe
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslHandler;
 import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 
 import javax.net.ssl.SSLEngine;
+
+import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
 
 /**
  */
@@ -52,7 +55,17 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
         SSLEngine engine = SecureChatSslContextFactory.getServerContext(sChatPath,sChatPath).createSSLEngine();
         engine.setUseClientMode(false);//设置服务端模式
         engine.setNeedClientAuth(true);//需要客户端验证
-
+//        try{
+//            System.out.println("判定kafka producer连接状态过程中...");
+//            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", "1");
+//            kafkaProducer.send(record).get();
+//            System.out.println("kafka producer连接正常");
+//        }
+//        catch (Exception err){
+//            err.printStackTrace();
+//            System.out.println("kafka producer连接异常，重新初始化连接");
+//            kafkaProducer=InitConnect();
+//        }
         pipeline.addLast("ssl", new SslHandler(engine));
         pipeline.addLast(new HttpServerCodec());
         pipeline.addLast(new HttpObjectAggregator(65536));
