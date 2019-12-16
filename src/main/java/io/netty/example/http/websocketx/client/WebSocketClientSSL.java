@@ -24,16 +24,14 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.example.http.websocketx.twoway.SecureChatSslContextFactory;
+import io.netty.example.http.websocketx.handler.WebSocketClientHandler;
+import io.netty.example.http.websocketx.factory.SecureChatSslContextFactory;
 import io.netty.handler.codec.http.DefaultHttpHeaders;
 import io.netty.handler.codec.http.HttpClientCodec;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.websocketx.*;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketClientCompressionHandler;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.SslHandler;
-import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 
 import javax.net.ssl.SSLEngine;
 import java.io.BufferedReader;
@@ -92,7 +90,7 @@ public final class WebSocketClientSSL {
                                     uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders()));
 
             Bootstrap b = new Bootstrap();
-            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
+            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/factory/cChat.jks";
 
             final SSLEngine engine = SecureChatSslContextFactory.getClientContext(cChatPath,cChatPath).createSSLEngine("localhost",8443);
             engine.setUseClientMode(true);

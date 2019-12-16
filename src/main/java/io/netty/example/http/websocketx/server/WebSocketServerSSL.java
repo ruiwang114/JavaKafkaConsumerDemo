@@ -20,16 +20,12 @@ import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.example.http.websocketx.initializer.WebSocketServerInitializerSSL;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
-import io.netty.handler.ssl.util.SelfSignedCertificate;
 import org.apache.kafka.clients.producer.Producer;
-import org.apache.kafka.clients.producer.ProducerRecord;
 
 import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
-import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.kafkaSend;
 
 /**
  * An HTTP server which serves Web Socket requests at:
