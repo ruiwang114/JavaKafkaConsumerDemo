@@ -5,13 +5,12 @@ import io.netty.example.http.websocketx.base.Global;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
-import javax.xml.bind.annotation.XmlElementDecl;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.KeyStore;
 
-public final class SecureChatSslContextFactory {
+public final class SecureChatSslContextFactoryCopy {
 	
 	private static final String PROTOCOL = "TLS";
 
@@ -96,19 +95,19 @@ public final class SecureChatSslContextFactory {
 			if (pkPath != null) {
 			    KeyStore ks = KeyStore.getInstance("JKS");
 			    in = new FileInputStream(pkPath);
-//			    ks.load(in, CLIENT_CERT_PWD.toCharArray());
-			    ks.load(in, "cNetty".toCharArray());
+			    ks.load(in, CLIENT_CERT_PWD.toCharArray());
+//			    ks.load(in, "cNetty".toCharArray());
 			    kmf = KeyManagerFactory.getInstance("SunX509");
-//			    kmf.init(ks, CLIENT_CERT_PWD.toCharArray());
-			    kmf.init(ks, "cNetty".toCharArray());
+			    kmf.init(ks, CLIENT_CERT_PWD.toCharArray());
+//			    kmf.init(ks, "cNetty".toCharArray());
 			}
 				
 			TrustManagerFactory tf = null;
 			if (caPath != null) {
 			    KeyStore tks = KeyStore.getInstance("JKS");
 			    tIN = new FileInputStream(caPath);
-//			    tks.load(tIN, CLIENT_CERT_PWD.toCharArray());
-			    tks.load(tIN, "cNetty".toCharArray());
+			    tks.load(tIN, CLIENT_CERT_PWD.toCharArray());
+//			    tks.load(tIN, "cNetty".toCharArray());
 			    tf = TrustManagerFactory.getInstance("SunX509");
 			    tf.init(tks);
 			}

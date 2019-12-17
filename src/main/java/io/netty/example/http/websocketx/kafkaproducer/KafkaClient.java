@@ -1,10 +1,19 @@
 package io.netty.example.http.websocketx.kafkaproducer;
 
+import io.netty.example.http.websocketx.base.Global;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.*;
 
 import java.util.Properties;
 
+
+/**
+ *
+ * Kafka Producer类，实现Kafka生产者功能
+ *
+ *@author oldRi
+ *Date 20191217
+ */
 @Slf4j
 public class KafkaClient {
 
@@ -19,10 +28,18 @@ public class KafkaClient {
         }
     }
 
+    /**
+     * Kafka连接对象初始化
+     *
+     * @param
+     * @return Producer<String, String> producer
+     */
     public static Producer<String, String>  InitConnect(){
+
         Properties props = new Properties();
 //        props.put("type","async");
-        props.put("bootstrap.servers", "localhost:9092");
+//        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", Global.bootStrapServers);
         props.put("acks", "0");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
@@ -33,13 +50,20 @@ public class KafkaClient {
 //        props.put("client.id", "producer"+random());
 
         Producer<String, String> producer = new KafkaProducer<String,String>(props);
+        log.info("kafka连接对象初始化成功");
         return producer;
     }
 
+    /**
+     * kafka向估计topic发送数据
+     *
+     * @param producer
+     * @param k01Msg
+     */
     public static void kafkaSend(Producer<String, String> producer,String k01Msg){
-
         try {
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", k01Msg);
+//            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", k01Msg);
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>(Global.topic, k01Msg);
 //            producer.send(record);
 //            System.out.println("消息发送成功:" + msg);
             producer.send(record, new Callback() {

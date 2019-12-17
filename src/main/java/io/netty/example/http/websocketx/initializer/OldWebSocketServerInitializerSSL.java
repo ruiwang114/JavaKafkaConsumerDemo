@@ -18,60 +18,57 @@ package io.netty.example.http.websocketx.initializer;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.example.http.websocketx.base.Global;
+import io.netty.example.http.websocketx.factory.OldSecureChatSslContextFactory;
 import io.netty.example.http.websocketx.handler.WebSocketFrameHandler;
-import io.netty.example.http.websocketx.factory.SecureChatSslContextFactory;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler;
 import io.netty.handler.ssl.SslHandler;
 import org.apache.kafka.clients.producer.Producer;
+
 import javax.net.ssl.SSLEngine;
 
-
 /**
- *
- *控制器，帮助用户控制通道
- *
- *@author oldRi
- *Date 20191217
  */
-public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChannel> {
+public class OldWebSocketServerInitializerSSL extends ChannelInitializer<SocketChannel> {
 
-    /**
-     * 用于控制wss接口功能
-     * example
-     * 上传功能url:wss://domain:port/upload
-     * 下载功能url:wss://domain:port/download
-     */
-    private static String WEBSOCKET_PATH = "";
+    private static final String WEBSOCKET_PATH = "/websocket";
 
     private Producer<String, String> kafkaProducer;
 
-    public WebSocketServerInitializerSSL(Producer<String, String> kafkaProducer) {
+    public OldWebSocketServerInitializerSSL(Producer<String, String> kafkaProducer) {
         this.kafkaProducer = kafkaProducer;
     }
 
     @Override
     public void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
-        WEBSOCKET_PATH= Global.websocketPath;
-        //获取证书路径
-        String sChatPath =  Global.serverKeyStorePath;
-        //使用SSL、双向认证
-        SSLEngine engine = SecureChatSslContextFactory.getServerContext(sChatPath,sChatPath).createSSLEngine();
-        //设置服务端模式
-        engine.setUseClientMode(false);
-        //需要客户端验证
-        engine.setNeedClientAuth(true);
+//        if (sslCtx != null) {
+//            pipeline.addLast(sslCtx.newHandler(ch.alloc()));
+//        }
+        String sChatPath = (System.getProperty("user.dir")+ "/src/main/java/io/netty/example/http/websocketx/conf/twoway/sChat.jks");
 
+        SSLEngine engine = OldSecureChatSslContextFactory.getServerContext(sChatPath,sChatPath).createSSLEngine();
+        engine.setUseClientMode(false);//设置服务端模式
+        engine.setNeedClientAuth(true);//需要客户端验证
+//        try{
+//            System.out.println("判定kafka producer连接状态过程中...");
+//            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", "1");
+//            kafkaProducer.send(record).get();
+//            System.out.println("kafka producer连接正常");
+//        }
+//        catch (Exception err){
+//            err.printStackTrace();
+//            System.out.println("kafka producer连接异常，重新初始化连接");
+//            kafkaProducer=InitConnect();
+//        }
         pipeline.addLast("ssl", new SslHandler(engine));
         pipeline.addLast(new HttpServerCodec());
         pipeline.addLast(new HttpObjectAggregator(65536));
         pipeline.addLast(new WebSocketServerCompressionHandler());
         pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
-        //Handler
+//        pipeline.addLast(new WebSocketIndexPageHandler(WEBSOCKET_PATH));
         pipeline.addLast(new WebSocketFrameHandler(kafkaProducer));
     }
 }

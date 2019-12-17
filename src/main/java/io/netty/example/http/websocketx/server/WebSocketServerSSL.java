@@ -20,69 +20,71 @@ import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.WebSocketServerInitializerSSL;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.Producer;
 
 import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
 
+
 /**
- * An HTTP server which serves Web Socket requests at:
  *
- * http://localhost:8080/websocket
+ * 工程主类,包含工程启动主函数.
  *
- * Open your browser at <a href="http://localhost:8080/">http://localhost:8080/</a>, then the demo page will be loaded
- * and a Web Socket connection will be made automatically.
  *
- * This server illustrates support for the different web socket specification versions and will work with:
- *
- * <ul>
- * <li>Safari 5+ (draft-ietf-hybi-thewebsocketprotocol-00)
- * <li>Chrome 6-13 (draft-ietf-hybi-thewebsocketprotocol-00)
- * <li>Chrome 14+ (draft-ietf-hybi-thewebsocketprotocol-10)
- * <li>Chrome 16+ (RFC 6455 aka draft-ietf-hybi-thewebsocketprotocol-17)
- * <li>Firefox 7+ (draft-ietf-hybi-thewebsocketprotocol-10)
- * <li>Firefox 11+ (RFC 6455 aka draft-ietf-hybi-thewebsocketprotocol-17)
- * </ul>
+ * @author oldRi
+ * Date 20191217
  */
+@Slf4j
 public final class WebSocketServerSSL {
 
-    static final boolean SSL = System.getProperty("ssl") != null;
-    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8080"));
-    static Producer<String, String> producer=null;
+//    static final boolean SSL = System.getProperty("ssl") != null;
+//    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
+    static Producer<String, String> kafkaProducer=null;
+
     public static void main(String[] args) throws Exception {
-        // Configure SSL.
-//        final SslContext sslCtx;
-////        if (SSL) {
-//        if (true) {
-//            SelfSignedCertificate ssc = new SelfSignedCertificate();
-//            sslCtx = SslContextBuilder.forServer(ssc.certificate(), ssc.privateKey()).build();
-//        } else {
-//            sslCtx = null;
-//        }
-        producer=InitConnect();
-//        kafkaSend(producer,"test");
+        WssServerStart();
+    }
 
-
-        EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+    /**
+     * 启动netty.
+     * @param
+     * @return
+     * @throws InterruptedException
+     */
+    public static void WssServerStart(){
+        //初始化Kafka生产者
+        kafkaProducer=InitConnect();
+        //初始化服务绑定端口
+        int wssServicePort= Global.wssServicePort;
+        //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，每个端口对应一个 Boss 线程
+        EventLoopGroup bossGroup = new NioEventLoopGroup();
+        //workerGroup 线程池会被各个 SubReactor 和 Worker 线程充分利用
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
+            //服务端启动引导类
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
-             .channel(NioServerSocketChannel.class)
-             .handler(new LoggingHandler(LogLevel.INFO))
-             .childHandler(new WebSocketServerInitializerSSL(producer));
+                    // 设置channel类型为NIO类型
+                    .channel(NioServerSocketChannel.class)
+                    .handler(new LoggingHandler(LogLevel.INFO))
+                    .childHandler(new WebSocketServerInitializerSSL(kafkaProducer));
 
-            Channel ch = b.bind(8443).sync().channel();
+            Channel ch = b.bind(wssServicePort).sync().channel();
 
-            System.out.println("Open your web browser and navigate to " + "https" + "://127.0.0.1:" + 8443 + '/');
+            log.info("wss服务已在本地端口： " + wssServicePort + "绑定并启动");
 
             ch.closeFuture().sync();
 
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
+            kafkaProducer.close();
         }
     }
 }

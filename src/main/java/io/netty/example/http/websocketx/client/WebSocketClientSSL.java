@@ -38,23 +38,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URI;
 
-/**
- * This is an example of a WebSocket client.
- * <p>
- * In order to run this example you need a compatible WebSocket server.
- * Therefore you can either start the WebSocket server from the examples
- * by running {@link io.netty.example.http.websocketx.server.WebSocketServer}
- * or connect to an existing WebSocket server such as
- * <a href="http://www.websocket.org/echo.html">ws://echo.websocket.org</a>.
- * <p>
- * The client will attempt to connect to the URI passed to it as the first argument.
- * You don't have to specify any arguments if you want to connect to the example WebSocket server,
- * as this is the default.
- */
+
 public final class WebSocketClientSSL {
 
 //    static final String URL = System.getProperty("url", "wss://127.0.0.1:8443/websocket");
-    static final String URL = System.getProperty("url", "wss://127.0.0.1:8443/websocket");
+    static final String URL = System.getProperty("url", "wss://127.0.0.1:18743/upload");
 
     public static void main(String[] args) throws Exception {
         URI uri = new URI(URL);
@@ -90,9 +78,10 @@ public final class WebSocketClientSSL {
                                     uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders()));
 
             Bootstrap b = new Bootstrap();
-            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/factory/cChat.jks";
+//            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
+            String cChatPath =  "/Users/aRi/Downloads/wsscert/cChat.jks";
 
-            final SSLEngine engine = SecureChatSslContextFactory.getClientContext(cChatPath,cChatPath).createSSLEngine("localhost",8443);
+            final SSLEngine engine = SecureChatSslContextFactory.getClientContext(cChatPath,cChatPath).createSSLEngine("localhost",port);
             engine.setUseClientMode(true);
             b.group(group)
              .channel(NioSocketChannel.class)
