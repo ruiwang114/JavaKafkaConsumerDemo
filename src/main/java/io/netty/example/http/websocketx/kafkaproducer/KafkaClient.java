@@ -55,7 +55,7 @@ public class KafkaClient {
     }
 
     /**
-     * kafka向估计topic发送数据
+     * kafka向固定topic发送数据
      *
      * @param producer
      * @param k01Msg
