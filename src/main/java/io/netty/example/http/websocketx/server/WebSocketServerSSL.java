@@ -41,6 +41,7 @@ import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitCon
 @Slf4j
 public final class WebSocketServerSSL {
 
+    //加载入口参数
 //    static final boolean SSL = System.getProperty("ssl") != null;
 //    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
     static Producer<String, String> kafkaProducer=null;
@@ -60,7 +61,8 @@ public final class WebSocketServerSSL {
         kafkaProducer=InitConnect();
         //初始化服务绑定端口
         int wssServicePort= Global.wssServicePort;
-        //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，每个端口对应一个 Boss 线程
+        //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，
+        //每个端口对应一个 Boss 线程
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         //workerGroup 线程池会被各个 SubReactor 和 Worker 线程充分利用
         EventLoopGroup workerGroup = new NioEventLoopGroup();

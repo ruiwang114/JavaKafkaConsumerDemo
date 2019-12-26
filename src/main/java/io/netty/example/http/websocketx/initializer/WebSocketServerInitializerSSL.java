@@ -19,6 +19,7 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.example.http.websocketx.base.Global;
+import io.netty.example.http.websocketx.factory.OpenSecureChatSslContextFactory;
 import io.netty.example.http.websocketx.handler.WebSocketFrameHandler;
 import io.netty.example.http.websocketx.factory.SecureChatSslContextFactory;
 import io.netty.handler.codec.http.HttpObjectAggregator;
@@ -57,10 +58,12 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
     public void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
         WEBSOCKET_PATH= Global.websocketPath;
-        //获取证书路径
+        //获取服务端证书路径
         String sChatPath =  Global.serverKeyStorePath;
+        //获取根证书路径
+        String sTrustPath = Global.rootKeyStorePath;
         //使用SSL、双向认证
-        SSLEngine engine = SecureChatSslContextFactory.getServerContext(sChatPath,sChatPath).createSSLEngine();
+        SSLEngine engine = OpenSecureChatSslContextFactory.getServerContext(sChatPath,sTrustPath).createSSLEngine();
         //设置服务端模式
         engine.setUseClientMode(false);
         //需要客户端验证

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="121511">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/OpenSecureChatSslContextFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/WebSocketServerInitializerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/WebSocketServerInitializerSSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parameter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parameter.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="1217deployVersion" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +67,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -71,8 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.netty.example.http.websocketx.client" />
       <recent name="io.netty.example.http.websocketx.factory" />
+      <recent name="io.netty.example.http.websocketx.client" />
       <recent name="io.netty.example.http.websocketx.initializer" />
       <recent name="io.netty.example.http.websocketx.server" />
       <recent name="io.netty.example.http.websocketx.base" />
@@ -85,7 +93,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OldWebSocketClientSSL">
+  <component name="RunManager" selected="Application.WebSocketClientSSL">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -204,9 +212,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OldWebSocketClientSSL" />
         <item itemvalue="Application.WebSocketClientSSL" />
         <item itemvalue="Application.WebSocketServerSSL" />
+        <item itemvalue="Application.OldWebSocketClientSSL" />
         <item itemvalue="Application.OldWebSocketServerSSL" />
         <item itemvalue="Application.testGlobal" />
       </list>
@@ -316,20 +324,29 @@
       <option name="project" value="LOCAL" />
       <updated>1577091379313</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="121511">
+      <created>1577092961567</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1577092961567</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1215" />
@@ -337,46 +354,70 @@
     <option name="LAST_COMMIT_MESSAGE" value="121511" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1213" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577337971815">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1213" y="350" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577337971815" />
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576583161450">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1848.23.1848.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1576583161450" />
-    <state x="-1332" y="142" key="CommitChangelistDialog2" timestamp="1577091379139">
+    <state x="-1332" y="142" key="CommitChangelistDialog2" timestamp="1577092961454">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091379139" />
-    <state width="1878" height="316" key="GridCell.Tab.0.bottom" timestamp="1577091408233">
+    <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577092961454" />
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1577355855990">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
-    <state width="1878" height="316" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408233" />
+    <state width="1638" height="289" key="GridCell.Tab.0.bottom/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336817" />
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855990" />
     <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1878" height="316" key="GridCell.Tab.0.center" timestamp="1577091408231">
+    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1577355855988">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
-    <state width="1878" height="316" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408231" />
+    <state width="1638" height="289" key="GridCell.Tab.0.center/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336815" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855988" />
     <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1878" height="316" key="GridCell.Tab.0.left" timestamp="1577091408229">
+    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1577355855986">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
-    <state width="1878" height="316" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408229" />
+    <state width="1638" height="289" key="GridCell.Tab.0.left/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336814" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855986" />
     <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1878" height="316" key="GridCell.Tab.0.right" timestamp="1577091408232">
+    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1577355855989">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
-    <state width="1878" height="316" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408232" />
+    <state width="1638" height="289" key="GridCell.Tab.0.right/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336816" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855989" />
     <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
+    <state width="1878" height="364" key="GridCell.Tab.1.bottom" timestamp="1577332456530">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456530" />
+    <state width="1878" height="364" key="GridCell.Tab.1.center" timestamp="1577332456527">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456527" />
+    <state width="1878" height="364" key="GridCell.Tab.1.left" timestamp="1577332456526">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456526" />
+    <state width="1878" height="364" key="GridCell.Tab.1.right" timestamp="1577332456528">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456528" />
     <state x="-1451" y="179" key="SettingsEditor" timestamp="1577091266949">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091266949" />
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577091387312">
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577092968253">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091387312" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577092968253" />
     <state x="-1531" y="162" key="new project wizard" timestamp="1576650335062">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -387,7 +428,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -397,13 +438,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java</url>
           <line>18</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

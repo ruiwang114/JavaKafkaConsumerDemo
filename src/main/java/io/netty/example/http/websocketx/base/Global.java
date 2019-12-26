@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Global {
 
+	public static String rootKeyStorePath = null;
+	public static String rootCertificatePassword = null;
 
 	public static String serverKeyStorePath = null;
 	public static String serverCertificatePassword = null;
@@ -21,6 +23,9 @@ public class Global {
 
 	static {
 		log.info("开始加载配置文件");
+		rootKeyStorePath=PropertyUtil.getInstance().read("rootKeyStorePath");
+		rootCertificatePassword=PropertyUtil.getInstance().read("rootCertificatePassword");
+
 		serverKeyStorePath= PropertyUtil.getInstance().read("serverKeyStorePath");
 		serverCertificatePassword=PropertyUtil.getInstance().read("serverCertificatePassword");
 

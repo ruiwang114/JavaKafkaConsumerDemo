@@ -49,6 +49,7 @@ public class KafkaClient {
         props.put("compression.type", "lz4");
 //        props.put("client.id", "producer"+random());
 
+        //声明子类对象
         Producer<String, String> producer = new KafkaProducer<String,String>(props);
         log.info("kafka连接对象初始化成功");
         return producer;
@@ -57,12 +58,13 @@ public class KafkaClient {
     /**
      * kafka向固定topic发送数据
      *
-     * @param producer
-     * @param k01Msg
+     * @param producer kafka连接对象
+     * @param k01Msg 发送的消息
      */
     public static void kafkaSend(Producer<String, String> producer,String k01Msg){
         try {
 //            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", k01Msg);
+            //声明发送消息对象，Global.topic在配置文件中配置topic名称
             ProducerRecord<String, String> record = new ProducerRecord<String, String>(Global.topic, k01Msg);
 //            producer.send(record);
 //            System.out.println("消息发送成功:" + msg);
@@ -73,16 +75,12 @@ public class KafkaClient {
                         log.info("send error" + e.getMessage());
                     }else {
 //                        log.info(String.format("offset:%s,partition:%s",recordMetadata.offset(),recordMetadata.partition()));
-
                     }
                 }
             });
-//            producer.close();
         }catch(Exception err){
             err.printStackTrace();
         }
-//        }
-//        producer.close();
     }
 
 }
