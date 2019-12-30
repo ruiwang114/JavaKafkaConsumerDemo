@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="121511">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/OpenSecureChatSslContextFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/DownloadWebSocketServerInitializerSSL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/SynMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/ThreatInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/downparameter.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/netty-ssl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/oneway/cChat.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/oneway/sChat.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/oneway/sChat.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/twoway/sChat.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/conf/twoway/sChat.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/OpenSecureChatSslContextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/OpenSecureChatSslContextFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/SecureChatSslContextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/SecureChatSslContextFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/WebSocketFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/WebSocketFrameHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/WebSocketServerInitializerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/WebSocketServerInitializerSSL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/kafkaproducer/KafkaClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/WebSocketServerSSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/parameter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parameter.properties" afterDir="false" />
     </list>
@@ -20,6 +45,13 @@
     <SUITE FILE_PATH="coverage/netty_example$WebSocketClient.coverage" NAME="WebSocketClient Coverage Results" MODIFIED="1576116908879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.netty.example.http.websocketx.client.*</FILTER>
     </SUITE>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -37,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1217deployVersion" />
+        <entry key="$PROJECT_DIR$" value="1226openssl" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,26 +100,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.netty.example.http.websocketx.factory" />
-      <recent name="io.netty.example.http.websocketx.client" />
+      <recent name="io.netty.example.http.websocketx.handler" />
       <recent name="io.netty.example.http.websocketx.initializer" />
       <recent name="io.netty.example.http.websocketx.server" />
-      <recent name="io.netty.example.http.websocketx.base" />
+      <recent name="io.netty.example.http.websocketx.factory" />
+      <recent name="io.netty.example.http.websocketx.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target/conf" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/target/conf" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway" />
@@ -100,34 +134,6 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="OldWebSocketClientSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.client.OldWebSocketClientSSL" />
-      <module name="netty-example" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OldWebSocketServerSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.server.OldWebSocketServerSSL" />
-      <module name="netty-example" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="WebSocketClientSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.client.WebSocketClientSSL" />
@@ -149,7 +155,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.handler.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,14 +169,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGlobal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.base.testGlobal" />
+    <configuration name="fast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.fast" />
       <module name="netty-example" />
-      <option name="VM_PARAMETERS" value="-Dssl=true" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.base.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="grouping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.grouping" />
+      <module name="netty-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="redis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.redis" />
+      <module name="netty-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,19 +237,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WebSocketServerSSL" />
       <item itemvalue="Application.WebSocketClientSSL" />
-      <item itemvalue="Application.testGlobal" />
-      <item itemvalue="Application.OldWebSocketServerSSL" />
-      <item itemvalue="Application.OldWebSocketClientSSL" />
+      <item itemvalue="Application.redis" />
+      <item itemvalue="Application.fast" />
+      <item itemvalue="Application.grouping" />
+      <item itemvalue="Application.WebSocketServerSSL" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.WebSocketClientSSL" />
         <item itemvalue="Application.WebSocketServerSSL" />
-        <item itemvalue="Application.OldWebSocketClientSSL" />
-        <item itemvalue="Application.OldWebSocketServerSSL" />
-        <item itemvalue="Application.testGlobal" />
+        <item itemvalue="Application.grouping" />
+        <item itemvalue="Application.redis" />
+        <item itemvalue="Application.fast" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577092961567</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="121511">
+      <created>1577356366015</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1577356366015</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +394,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="121511" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1360" y="205" key="#Project_Structure" timestamp="1577444352347">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1360" y="205" key="#Project_Structure/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577444352347" />
     <state x="-1213" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577337971815">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -362,66 +406,86 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1848.23.1848.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1576583161450" />
-    <state x="-1332" y="142" key="CommitChangelistDialog2" timestamp="1577092961454">
+    <state x="-1331" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577433153130">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577092961454" />
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1577355855990">
+    <state x="-1331" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577433153130" />
+    <state x="-1222" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577416689080">
       <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1222" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577416689080" />
+    <state x="-1332" y="142" key="CommitChangelistDialog2" timestamp="1577356365772">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577356365772" />
+    <state width="1638" height="352" key="GridCell.Tab.0.bottom" timestamp="1577627885807">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
     <state width="1638" height="289" key="GridCell.Tab.0.bottom/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336817" />
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855990" />
-    <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1577355855988">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577444567440" />
+    <state width="1638" height="352" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577627885807" />
+    <state width="1638" height="352" key="GridCell.Tab.0.center" timestamp="1577627885800">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
     <state width="1638" height="289" key="GridCell.Tab.0.center/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336815" />
-    <state width="1878" height="289" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855988" />
-    <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1577355855986">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577444567436" />
+    <state width="1638" height="352" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577627885800" />
+    <state width="1638" height="352" key="GridCell.Tab.0.left" timestamp="1577627885799">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
     <state width="1638" height="289" key="GridCell.Tab.0.left/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336814" />
-    <state width="1878" height="289" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855986" />
-    <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1577355855989">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577444567434" />
+    <state width="1638" height="352" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577627885799" />
+    <state width="1638" height="352" key="GridCell.Tab.0.right" timestamp="1577627885801">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
     <state width="1638" height="289" key="GridCell.Tab.0.right/-1854.23.1854.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1577340336816" />
-    <state width="1878" height="289" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577355855989" />
-    <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
-    <state width="1878" height="364" key="GridCell.Tab.1.bottom" timestamp="1577332456530">
+    <state width="1878" height="289" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577444567438" />
+    <state width="1638" height="352" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577627885801" />
+    <state width="1638" height="352" key="GridCell.Tab.1.bottom" timestamp="1577627886249">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577411543914" />
+    <state width="1638" height="352" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577627886249" />
+    <state width="1638" height="352" key="GridCell.Tab.1.center" timestamp="1577627886247">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577411543911" />
+    <state width="1638" height="352" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577627886247" />
+    <state width="1638" height="352" key="GridCell.Tab.1.left" timestamp="1577627886245">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577411543910" />
+    <state width="1638" height="352" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577627886245" />
+    <state width="1638" height="352" key="GridCell.Tab.1.right" timestamp="1577627886248">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="364" key="GridCell.Tab.1.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577411543913" />
+    <state width="1638" height="352" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577627886248" />
+    <state x="-1310" y="241" key="NewModule_or_Project.wizard" timestamp="1577365494177">
+      <screen x="-1854" y="23" width="1854" height="1057" />
+    </state>
+    <state x="-1310" y="241" key="NewModule_or_Project.wizard/-1854.23.1854.1057/0.0.1680.1050@-1854.23.1854.1057" timestamp="1577365494177" />
+    <state x="-1451" y="179" key="SettingsEditor" timestamp="1577433022561">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="364" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456530" />
-    <state width="1878" height="364" key="GridCell.Tab.1.center" timestamp="1577332456527">
+    <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577433022561" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577356383672">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="364" key="GridCell.Tab.1.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456527" />
-    <state width="1878" height="364" key="GridCell.Tab.1.left" timestamp="1577332456526">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="364" key="GridCell.Tab.1.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456526" />
-    <state width="1878" height="364" key="GridCell.Tab.1.right" timestamp="1577332456528">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="364" key="GridCell.Tab.1.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577332456528" />
-    <state x="-1451" y="179" key="SettingsEditor" timestamp="1577091266949">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091266949" />
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577092968253">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577092968253" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577356383672" />
     <state x="-1531" y="162" key="new project wizard" timestamp="1576650335062">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1531" y="162" key="new project wizard/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1576650335062" />
+    <state x="-1295" y="202" width="670" height="676" key="search.everywhere.popup" timestamp="1577443948476">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1295" y="202" width="670" height="676" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577443948476" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,127 +496,16 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/SecureChatSslContextFactory.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java</url>
           <line>18</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisUtil.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>netty-example:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>netty-example</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

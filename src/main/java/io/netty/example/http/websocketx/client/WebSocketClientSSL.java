@@ -42,8 +42,8 @@ import java.net.URI;
 
 public final class WebSocketClientSSL {
 
-//    static final String URL = System.getProperty("url", "wss://127.0.0.1:8443/websocket");
-    static final String URL = System.getProperty("url", "wss://114.242.143.146:9994/upload");
+    static final String URL = System.getProperty("url", "wss://127.0.0.1:9994/upload");
+//    static final String URL = System.getProperty("url", "wss://114.242.143123123.146:9994/upload");
 
     public static void main(String[] args) throws Exception {
         URI uri = new URI(URL);
@@ -82,8 +82,9 @@ public final class WebSocketClientSSL {
 //            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
             String cChatPath =  "/Users/aRi/Downloads/netty-4.1/example/opensslcert/client.p12";
             String cTrustPath = "/Users/aRi/Downloads/netty-4.1/example/opensslcert/root.p12";
-            final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine("114.242.143.146",port);
+            final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine("127.0.0.1",port);
             engine.setUseClientMode(true);
+
             b.group(group)
              .channel(NioSocketChannel.class)
              .handler(new ChannelInitializer<SocketChannel>() {

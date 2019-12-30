@@ -37,11 +37,9 @@ public final class SecureChatSslContextFactory {
 				KeyStore ks = KeyStore.getInstance("JKS");
 				in = new FileInputStream(pkPath);
 				ks.load(in, SERVER_CERT_PWD.toCharArray());
-//				ks.load(in, "sNetty".toCharArray());
 
 				kmf = KeyManagerFactory.getInstance("SunX509");
 				kmf.init(ks, SERVER_CERT_PWD.toCharArray());
-//				kmf.init(ks, "sNetty".toCharArray());
 			}
 			//信任库 
 			TrustManagerFactory tf = null;

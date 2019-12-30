@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.KeyStore;
+import java.security.SecureRandom;
 
 /**
  *
@@ -53,30 +54,26 @@ public final class OpenSecureChatSslContextFactory {
 			//密钥管理器
 			KeyManagerFactory kmf = null;
 			if(pkPath!=null){
-				//keytool生成证书
-//				KeyStore ks = KeyStore.getInstance("JKS");
-				//openssl生成证书
+				//openssl生成证书，KEY_STORE_TYPE=PKCS12
 				KeyStore ks = KeyStore.getInstance(KEY_STORE_TYPE);
 				in = new FileInputStream(pkPath);
 				ks.load(in, SERVER_CERT_PWD.toCharArray());
-//				ks.load(in, "sNetty".toCharArray());
 
 				//设置加密方式
 				kmf = KeyManagerFactory.getInstance("SunX509");
 				kmf.init(ks, SERVER_CERT_PWD.toCharArray());
-//				kmf.init(ks, "sNetty".toCharArray());
 			}
 			//信任库 
 			TrustManagerFactory tf = null;
 			if (caPath != null) {
-//			    KeyStore tks = KeyStore.getInstance("JKS");
 			    KeyStore tks = KeyStore.getInstance(KEY_STORE_TYPE);
 			    tIN = new FileInputStream(caPath);
 			    tks.load(tIN, SERVER_CERT_PWD.toCharArray());
 			    tf = TrustManagerFactory.getInstance("SunX509");
 			    tf.init(tks);
 			}
-			
+
+
 			SERVER_CONTEXT= SSLContext.getInstance(PROTOCOL);
 			//初始化此上下文
 			//参数一：认证的密钥      参数二：对等信任认证  参数三：伪随机数生成器 。 若是单向认证，服务端不用验证客户端，所以第二个参数为null
@@ -123,13 +120,15 @@ public final class OpenSecureChatSslContextFactory {
 		 try{
 			KeyManagerFactory kmf = null;
 			if (pkPath != null) {
+				//KEY_STORE_TYPE="PKCS12"
 			    KeyStore ks = KeyStore.getInstance(KEY_STORE_TYPE);
 			    in = new FileInputStream(pkPath);
 			    ks.load(in, CLIENT_CERT_PWD.toCharArray());
 			    kmf = KeyManagerFactory.getInstance("SunX509");
 			    kmf.init(ks, CLIENT_CERT_PWD.toCharArray());
+
 			}
-				
+
 			TrustManagerFactory tf = null;
 			if (caPath != null) {
 			    KeyStore tks = KeyStore.getInstance(KEY_STORE_TYPE);
@@ -139,9 +138,9 @@ public final class OpenSecureChatSslContextFactory {
 			    tf.init(tks);
 			}
 			 
-			 CLIENT_CONTEXT = SSLContext.getInstance(PROTOCOL);
-			 //初始化此上下文
-			 //参数一：认证的密钥      参数二：对等信任认证  参数三：伪随机数生成器 。 若是单向认证，服务端不用验证客户端，所以第二个参数可以为null
+			CLIENT_CONTEXT = SSLContext.getInstance(PROTOCOL);
+			//初始化此上下文
+			 // 参数一：认证的密钥      参数二：对等信任认证  参数三：伪随机数生成器 。 若是单向认证，服务端不用验证客户端，所以第二个参数可以为null
 			 CLIENT_CONTEXT.init(kmf.getKeyManagers(),tf.getTrustManagers(), null);
 			 
 		 }catch(Exception e){
