@@ -1,11 +1,11 @@
 package io.netty.example.http.websocketx.test;
 
 import com.alibaba.fastjson.JSON;
+import io.netty.example.http.websocketx.entity.ThreatInfo;
 import lombok.extern.slf4j.Slf4j;
 import redis.clients.jedis.Jedis;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static io.netty.example.http.websocketx.test.fast.serialize;
@@ -37,7 +37,7 @@ public class redis {
         //连接本地的 Redis 服务
 //        RedisUtil.getJedis();
 //        RedisUtil.releaseResource(RedisUtil.getJedis());
-        Jedis jRedis=RedisUtil.getJedis();
+        Jedis jRedis= RedisUtilTest.getJedis();
 
         // 将map存入redis中
         jRedis.hmset(MapName, setMap("1",jsonStr));

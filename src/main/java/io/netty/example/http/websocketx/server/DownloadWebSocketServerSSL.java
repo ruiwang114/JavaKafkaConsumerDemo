@@ -7,14 +7,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.DownloadWebSocketServerInitializerSSL;
-import io.netty.example.http.websocketx.test.RedisUtil;
+import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.Producer;
 import redis.clients.jedis.Jedis;
-
-import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
 
 
 /**

@@ -1,6 +1,7 @@
 package io.netty.example.http.websocketx.test;
 
 import com.alibaba.fastjson.JSON;
+import io.netty.example.http.websocketx.entity.ThreatInfo;
 import redis.clients.jedis.Jedis;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class grouping {
     public static void main(String[] args) {
-        Jedis jRedis=RedisUtil.getJedis();
+        Jedis jRedis= RedisUtilTest.getJedis();
 
         List<ThreatInfo> threatList=new ArrayList<ThreatInfo>();
 
@@ -24,7 +25,7 @@ public class grouping {
         }
 
         Map<String, Long> map = threatList.stream().
-                collect(Collectors.groupingBy(ThreatInfo::getInFold,Collectors.counting()));
+                collect(Collectors.groupingBy(ThreatInfo::getInfoId,Collectors.counting()));
 
         System.out.printf(map.toString());
     }
