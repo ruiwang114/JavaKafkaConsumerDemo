@@ -4,6 +4,7 @@ import io.netty.example.http.websocketx.base.Global;
 
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -137,12 +138,12 @@ public final class OpenSecureChatSslContextFactory {
 			    tf = TrustManagerFactory.getInstance("SunX509");
 			    tf.init(tks);
 			}
-			 
+
 			CLIENT_CONTEXT = SSLContext.getInstance(PROTOCOL);
 			//初始化此上下文
 			 // 参数一：认证的密钥      参数二：对等信任认证  参数三：伪随机数生成器 。 若是单向认证，服务端不用验证客户端，所以第二个参数可以为null
 			 CLIENT_CONTEXT.init(kmf.getKeyManagers(),tf.getTrustManagers(), null);
-			 
+
 		 }catch(Exception e){
 			 throw new Error("Failed to initialize the client-side SSLContext");
 		 }finally{

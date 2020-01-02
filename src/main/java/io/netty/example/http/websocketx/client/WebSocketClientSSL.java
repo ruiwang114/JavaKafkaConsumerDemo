@@ -81,7 +81,7 @@ public final class WebSocketClientSSL {
             Bootstrap b = new Bootstrap();
 //            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
             String cChatPath =  "/Users/aRi/Downloads/netty-4.1/example/opensslcert/client.p12";
-            String cTrustPath = "/Users/aRi/Downloads/netty-4.1/example/opensslcert/root.p12";
+            String cTrustPath = "/Users/aRi/Downloads/netty-4.1/example/opensslcert/server.p12";
             final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine("127.0.0.1",port);
             engine.setUseClientMode(true);
 

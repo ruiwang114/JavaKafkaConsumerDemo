@@ -14,9 +14,10 @@ public class PropertyUtil {
 	private Properties props = new Properties();
 
 	public PropertyUtil() {
-//		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("config/parameter.properties");
-//		System.out.println(this.getClass().getClassLoader().getResource("parameter.properties").getPath());
-		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("parameter.properties");
+		//线上部署启用该配置文件
+		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("release_parameter.properties");
+		//本地部署测试启用该配置文件
+//		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("parameter.properties");
 		try {
 			props.load(inputStream);
 		} catch (IOException e) {
