@@ -7,6 +7,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.DownloadWebSocketServerInitializerSSL;
+import io.netty.example.http.websocketx.initializer.HttpServerInitializer;
 import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
@@ -29,7 +30,7 @@ public final class DownloadWebSocketServerSSL {
     //加载入口参数
 //    static final boolean SSL = System.getProperty("ssl") != null;
 //    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
-    static Producer<String, String> kafkaProducer=null;
+//    static Producer<String, String> kafkaProducer=null;
 
     public static void main(String[] args) throws Exception {
         WssServerStart();
@@ -58,7 +59,8 @@ public final class DownloadWebSocketServerSSL {
                     // 设置channel类型为NIO类型
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new DownloadWebSocketServerInitializerSSL(jRedis));
+//                    .childHandler(new DownloadWebSocketServerInitializerSSL(jRedis));
+                    .childHandler(new HttpServerInitializer());
 
             Channel ch = b.bind(wssServicePort).sync().channel();
 
@@ -71,7 +73,7 @@ public final class DownloadWebSocketServerSSL {
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
-            kafkaProducer.close();
+//            kafkaProducer.close();
         }
     }
 }
