@@ -1,101 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="121511">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_barchart_udt_barchart_udt_bundle_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_barchart_udt_barchart_udt_bundle_2_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_csv_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_csv_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_12_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_12_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_javax_activation_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_javax_activation_1_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_scala_logging_scala_logging_2_12_3_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_scala_logging_scala_logging_2_12_3_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_3_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_3_9_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_build_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_build_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_2_0_26_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_2_0_26_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_43_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_43_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_9_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_9_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_12_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_12_2_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_54.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_54.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_conscrypt_conscrypt_openjdk_uber_1_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_conscrypt_conscrypt_openjdk_uber_1_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_npn_npn_api_1_1_1_v20141010.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_npn_npn_api_1_1_1_v20141010.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rxtx_rxtx_2_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rxtx_rxtx_2_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_12_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_12_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="情报数据聚合逻辑">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/IndustryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_2_0_26_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_windows_x86_64_2_0_26_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-example.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/SecureChatSslContextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/factory/SecureChatSslContextFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/ThreatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +32,20 @@
     <SUITE FILE_PATH="coverage/netty_example$WebSocketClient.coverage" NAME="WebSocketClient Coverage Results" MODIFIED="1576116908879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.netty.example.http.websocketx.client.*</FILTER>
     </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,9 +69,15 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk8" />
+      </list>
+    </option>
     <option name="disabledProfiles">
       <list>
         <option value="java11" />
+        <option value="not_x86_64" />
       </list>
     </option>
   </component>
@@ -148,18 +94,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ai-music" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27782887" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.netty.example.http.websocketx.handler" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.netty.example.http.websocketx.util" />
       <recent name="io.netty.example.http.websocketx.client" />
@@ -175,6 +126,12 @@
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+      <command value="mvn package -Dmaven.test.skip=true" />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.RedisTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -183,13 +140,41 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="RedisTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.RedisTest" />
+    <configuration name="DownWebSocketFrameHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.handler.DownWebSocketFrameHandler" />
       <module name="netty-example" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.initializer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DownloadWebSocketServerSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.server.DownloadWebSocketServerSSL" />
+      <module name="netty-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.netty.example.http.websocketx.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.util.JdbcUtil" />
+      <module name="netty-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.netty.example.http.websocketx.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,23 +202,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.addData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.netty.example.http.websocketx.test" />
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.RedisTest" />
-      <option name="METHOD_NAME" value="addData" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RedisTest.getData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netty-example" />
       <extension name="coverage">
@@ -245,23 +213,6 @@
       <option name="PACKAGE_NAME" value="io.netty.example.http.websocketx.test" />
       <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.RedisTest" />
       <option name="METHOD_NAME" value="getData" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTest.getPointTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.netty.example.http.websocketx.test" />
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.RedisTest" />
-      <option name="METHOD_NAME" value="getPointTime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -295,18 +246,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.RedisTest" />
-      <item itemvalue="Application.RedisTest (2)" />
-      <item itemvalue="JUnit.RedisTest.addData" />
-      <item itemvalue="JUnit.RedisTest.getPointTime" />
+      <item itemvalue="Application.DownloadWebSocketServerSSL" />
+      <item itemvalue="Application.DownWebSocketFrameHandler" />
       <item itemvalue="JUnit.RedisTest.getData" />
+      <item itemvalue="Application.JdbcUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RedisTest" />
+        <item itemvalue="Application.JdbcUtil" />
+        <item itemvalue="Application.DownloadWebSocketServerSSL" />
+        <item itemvalue="Application.DownWebSocketFrameHandler" />
         <item itemvalue="JUnit.RedisTest.getData" />
-        <item itemvalue="JUnit.RedisTest.addData" />
-        <item itemvalue="Application.RedisTest (2)" />
-        <item itemvalue="JUnit.RedisTest.getPointTime" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +266,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - @39.107.234.35" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -344,7 +300,14 @@
       <workItem from="1576816345307" duration="1640000" />
       <workItem from="1576928682997" duration="2686000" />
       <workItem from="1577699083951" duration="26502000" />
-      <workItem from="1577789473533" duration="507000" />
+      <workItem from="1577789473533" duration="779000" />
+      <workItem from="1577925143346" duration="27162000" />
+      <workItem from="1578010879114" duration="6089000" />
+      <workItem from="1578046078708" duration="72000" />
+      <workItem from="1578046200221" duration="295000" />
+      <workItem from="1578271624841" duration="3814000" />
+      <workItem from="1578279591373" duration="2775000" />
+      <workItem from="1578289198369" duration="21533000" />
     </task>
     <task id="LOCAL-00001" summary="1215">
       <created>1576400116193</created>
@@ -416,17 +379,22 @@
       <option name="project" value="LOCAL" />
       <updated>1577091379313</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="情报数据聚合逻辑">
+      <created>1577790121967</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1577790121967</updated>
+    </task>
+    <task id="LOCAL-00012" summary="情报数据聚合测试">
+      <created>1578043003210</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578043003210</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -434,9 +402,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1215" />
     <MESSAGE value="121511" />
-    <option name="LAST_COMMIT_MESSAGE" value="121511" />
+    <MESSAGE value="情报数据聚合逻辑" />
+    <MESSAGE value="情报数据聚合测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="情报数据聚合测试" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="261" y="40" key="#Inspections" timestamp="1578306862185">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="261" y="40" key="#Inspections/0.40.1536.824@0.40.1536.824" timestamp="1578306862185" />
     <state x="261" y="40" key="#Project_Structure" timestamp="1577699794785">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -445,51 +419,95 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="273" y="40" key="#RedisTest.getData/0.40.1536.824@0.40.1536.824" timestamp="1577789287418" />
+    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578301548042">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1578301548042" />
+    <state x="530" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1577954707433">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="530" y="96" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1577954707433" />
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576583161450">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1848.23.1848.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1576583161450" />
-    <state x="246" y="40" key="CommitChangelistDialog2" timestamp="1577789914871">
+    <state x="486" y="320" width="676" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577929974110">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="486" y="320" width="676" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1536.824@0.40.1536.824" timestamp="1577929974110" />
+    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578305151708">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578305151708" />
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578311020399">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091379139" />
-    <state x="246" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1577789914871" />
-    <state x="294" y="111" key="DiffContextDialog" timestamp="1577789910995">
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578311020399" />
+    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578308923988">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="294" y="111" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1577789910995" />
+    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578308923988" />
+    <state x="294" y="111" key="DiffContextDialog" timestamp="1578311019974">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="294" y="111" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578311019974" />
     <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl" timestamp="1577788882909">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1577788882909" />
-    <state width="1485" height="191" key="GridCell.Tab.0.bottom" timestamp="1577789938548">
+    <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog" timestamp="1578280837758">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog/0.40.1536.824@0.40.1536.824" timestamp="1578280837758" />
+    <state width="1485" height="233" key="GridCell.Tab.0.bottom" timestamp="1578310408171">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
     <state width="1878" height="316" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408233" />
     <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1485" height="191" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1577789938548" />
-    <state width="1485" height="191" key="GridCell.Tab.0.center" timestamp="1577789938548">
+    <state width="1485" height="233" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578310408171" />
+    <state width="1485" height="233" key="GridCell.Tab.0.center" timestamp="1578310408171">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
     <state width="1878" height="316" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408231" />
     <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1485" height="191" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1577789938548" />
-    <state width="1485" height="191" key="GridCell.Tab.0.left" timestamp="1577789938548">
+    <state width="1485" height="233" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578310408171" />
+    <state width="1485" height="233" key="GridCell.Tab.0.left" timestamp="1578310408171">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
     <state width="1878" height="316" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408229" />
     <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1485" height="191" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1577789938548" />
-    <state width="1485" height="191" key="GridCell.Tab.0.right" timestamp="1577789938548">
+    <state width="1485" height="233" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578310408171" />
+    <state width="1485" height="233" key="GridCell.Tab.0.right" timestamp="1578310408171">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
     <state width="1878" height="316" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408232" />
     <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
-    <state width="1485" height="191" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1577789938548" />
+    <state width="1485" height="233" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578310408171" />
+    <state width="1485" height="164" key="GridCell.Tab.1.bottom" timestamp="1578309446905">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1485" height="164" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578309446905" />
+    <state width="1485" height="164" key="GridCell.Tab.1.center" timestamp="1578309446904">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1485" height="164" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578309446904" />
+    <state width="1485" height="164" key="GridCell.Tab.1.left" timestamp="1578309446904">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1485" height="164" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578309446904" />
+    <state width="1485" height="164" key="GridCell.Tab.1.right" timestamp="1578309446905">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1485" height="164" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578309446905" />
+    <state width="306" height="548" key="HiddenNamespacesPopup" timestamp="1578301562488">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="306" height="548" key="HiddenNamespacesPopup/0.40.1536.824@0.40.1536.824" timestamp="1578301562488" />
     <state x="186" y="40" key="Maven.ArtifactSearchDialog" timestamp="1577698178517">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -498,27 +516,32 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="408" y="101" key="MultipleFileMergeDialog/0.40.1536.824@0.40.1536.824" timestamp="1577692516856" />
-    <state x="214" y="40" key="SettingsEditor" timestamp="1577788885882">
+    <state x="214" y="40" key="SettingsEditor" timestamp="1577956005240">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091266949" />
-    <state x="214" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1577788885882" />
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577091387312">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="214" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1577956005240" />
+    <state x="277" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578043321732">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091387312" />
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577789475317">
+    <state x="277" y="102" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1578043321732" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1578280651030">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1577789475317" />
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577788542196">
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.40.1536.824@0.40.1536.824" timestamp="1578280651030" />
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578289347771">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1577788542196" />
-    <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1577789167270">
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578289347771" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578297433930">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="303" y="87" width="963" height="730" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1577789167270" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578297433930" />
+    <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1578299808047">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="303" y="87" width="963" height="730" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1578299808047" />
     <state x="429" y="102" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577692509506">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -527,10 +550,14 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1531" y="162" key="new project wizard/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1576650335062" />
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1577701512463">
+    <state x="341" y="203" width="840" height="1034" key="run.anything.popup" timestamp="1577956035253">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1577701512463" />
+    <state x="341" y="203" width="840" height="1034" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1577956035253" />
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578303183991">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578303183991" />
     <state x="210" y="66" key="spring file set editor" timestamp="1577699264370">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -553,11 +580,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
           <line>81</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

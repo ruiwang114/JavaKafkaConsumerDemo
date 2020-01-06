@@ -33,7 +33,7 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         resMap.put("method",req.method().name());
         resMap.put("uri",uri);
         Integer offset=2;
-        String[] keys=new String[]{"bank","ga"};
+        String[] keys=new String[]{"yisuo"};
         List<ThreatInfo> threatInfos = DownWebSocketFrameHandler.dataAggregate(keys, offset);
         JSONObject rs=new JSONObject();
         rs.put("new_offset",offset+1);

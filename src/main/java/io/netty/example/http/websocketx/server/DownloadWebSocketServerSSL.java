@@ -8,12 +8,15 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.DownloadWebSocketServerInitializerSSL;
 import io.netty.example.http.websocketx.initializer.HttpServerInitializer;
+import io.netty.example.http.websocketx.util.JdbcUtil;
 import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.Producer;
 import redis.clients.jedis.Jedis;
+
+import javax.sql.DataSource;
 
 
 /**
@@ -43,8 +46,9 @@ public final class DownloadWebSocketServerSSL {
      * @throws InterruptedException
      */
     public static void WssServerStart(){
-        //启动redis连接池，并获取edis连接
+        //启动redis连接池，并初始化redis，druid连接池
         Jedis jRedis= RedisUtil.getJedis();
+        DataSource dataSource = JdbcUtil.getDataSource();
         //初始化服务绑定端口
         int wssServicePort= Global.wssServicePort;
         //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，

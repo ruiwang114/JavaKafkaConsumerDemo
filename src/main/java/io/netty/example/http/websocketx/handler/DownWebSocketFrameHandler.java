@@ -69,6 +69,7 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
         List<ThreatInfo> result=new ArrayList<>();
         try {
             List<ThreatInfo> threatInfos=new ArrayList<>();
+            //1.按照ip,infoId分组  2.拼接industryCode  3.取最小startTime  4.取最大endTime  5.total求和
             for (String key : keys) {
                 Map<String, String> map = jedis.hgetAll(key);
                 map.entrySet().parallelStream().filter(m -> Integer.parseInt(m.getKey())<=offset).forEach(m -> {
@@ -76,14 +77,13 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
                     threatInfos.addAll(threatInfo);
                 });
             }
-            //1.按照ip,infoId分组  2.拼接industryCode  3.取最小startTime  4.取最大endTime  5.total求和
-            Map<String, List<ThreatInfo>> groupResult = threatInfos.stream().collect(Collectors.groupingBy(t -> t.getIp()+"#"+t.getInfoId()));
-            groupResult.entrySet().stream().forEach(g -> {
+            Map<String, List<ThreatInfo>> groupResult = threatInfos.parallelStream().collect(Collectors.groupingBy(t -> t.getIp()+"#"+t.getInfoId()));
+            groupResult.entrySet().parallelStream().forEach(g -> {
                 List<ThreatInfo> threatInfo = g.getValue();
-                String industryCodes = threatInfo.stream().map(ThreatInfo::getIndustryCode).distinct().collect(Collectors.joining("|"));
-                String startTime = threatInfo.stream().min(Comparator.comparing(ThreatInfo::getStartTime)).get().getStartTime();
-                String endTime = threatInfo.stream().max(Comparator.comparing(ThreatInfo::getEndTime)).get().getEndTime();
-                long total = threatInfo.stream().mapToLong(t -> Long.parseLong(t.getTotal())).sum();
+                String industryCodes = threatInfo.parallelStream().map(ThreatInfo::getIndustryCode).distinct().collect(Collectors.joining("|"));
+                String startTime = threatInfo.parallelStream().min(Comparator.comparing(ThreatInfo::getStartTime)).get().getStartTime();
+                String endTime = threatInfo.parallelStream().max(Comparator.comparing(ThreatInfo::getEndTime)).get().getEndTime();
+                long total = threatInfo.parallelStream().mapToLong(t -> Long.parseLong(t.getTotal())).sum();
                 ThreatInfo resultThreatInfo=new ThreatInfo()
                         .setIndustryCode(industryCodes)
                         .setStartTime(startTime)

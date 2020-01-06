@@ -37,23 +37,22 @@ public class PropertyUtil {
 
 	public String read(String key) {
 		String value = props.getProperty(key);
-//		System.out.println(value);
-
 		log.info(key+" : "+value);
-
 		return value;
 	}
 
+	/**
+	 * 根据配置文件路径加载配置文件
+	 * @param path
+	 * @return
+	 */
 	public static Properties load(String path) {
 		Properties properties = new Properties();
-		String basePath = getInstance().getClass().getClassLoader().getResource("/").getPath();
-		String fullPath = basePath + "/config/config.properties";
-
 		InputStream inputStream = getInstance().getClass().getClassLoader().getResourceAsStream(path);
 		try {
 			properties.load(inputStream);
 		} catch (IOException e) {
-			System.out.println("加载配置文件失败:" + fullPath);
+			System.out.println("加载配置文件失败:" + path);
 			e.printStackTrace();
 		} finally {
 			try {
@@ -62,7 +61,6 @@ public class PropertyUtil {
 				e.printStackTrace();
 			}
 		}
-
 		return properties;
 	}
 
