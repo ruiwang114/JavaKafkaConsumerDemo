@@ -68,6 +68,7 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
         engine.setUseClientMode(false);
         //需要客户端验证
         engine.setNeedClientAuth(true);
+//        engine.setNeedClientAuth();
 
 
 
