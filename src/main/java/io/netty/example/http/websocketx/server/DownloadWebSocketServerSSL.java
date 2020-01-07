@@ -13,10 +13,6 @@ import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.producer.Producer;
-import redis.clients.jedis.Jedis;
-
-import javax.sql.DataSource;
 
 
 /**
@@ -47,8 +43,8 @@ public final class DownloadWebSocketServerSSL {
      */
     public static void WssServerStart(){
         //启动redis连接池，并初始化redis，druid连接池
-        Jedis jRedis= RedisUtil.getJedis();
-        DataSource dataSource = JdbcUtil.getDataSource();
+        RedisUtil initRedis=new RedisUtil();
+        JdbcUtil initJdbc=new JdbcUtil();
         //初始化服务绑定端口
         int wssServicePort= Global.wssServicePort;
         //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，
@@ -63,7 +59,7 @@ public final class DownloadWebSocketServerSSL {
                     // 设置channel类型为NIO类型
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-//                    .childHandler(new DownloadWebSocketServerInitializerSSL(jRedis));
+//                    .childHandler(new DownloadWebSocketServerInitializerSSL());
                     .childHandler(new HttpServerInitializer());
 
             Channel ch = b.bind(wssServicePort).sync().channel();

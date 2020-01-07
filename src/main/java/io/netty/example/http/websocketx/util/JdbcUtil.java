@@ -1,10 +1,11 @@
 package io.netty.example.http.websocketx.util;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.alibaba.druid.pool.DruidPooledConnection;
 import io.netty.example.http.websocketx.base.PropertyUtil;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.sql.DataSource;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -14,77 +15,37 @@ import java.util.*;
 @Slf4j
 public class JdbcUtil {
 
-        private static DataSource dataSource=null;
-        private static String URL ;
-        private static String USERNAME  ;
-        private static String PASSWORD  ;
-        private static String INITIALSIZE ;
-        private static String MINIDLE ;
-        private static String MAXACTIVE ;
-        private static String MAXWAIT ;
-        private static String TIMEBETWEENEVICTIONRUNSMILLIS ;
-        private static String MINEVICTABLEIDLETIMEMILLIS ;
-        private static String VALIDATIONQUERY ;
-        private static String TESTWHILEIDLE ;
-        private static String TESTONBORROW ;
-        private static String TESTONRETURN ;
+        private static JdbcUtil jdbcUtil = null;
+        private static DruidDataSource druidDataSource = null;
 
         static {
                 try {
-                        buildParams();
-                        dataSource=initDruidFactory();
-                        log.info("durid连接池初始化成功！");
+                        Properties prop = PropertyUtil.load("druid.properties");
+                        druidDataSource= (DruidDataSource) DruidDataSourceFactory.createDataSource(prop);
+                        log.info("durid连接池初始化成功");
                 } catch (Exception e) {
                         log.error("durid连接池初始化失败:{}",e);
                 }
         }
 
-        private static Properties buildParams(){
-                Properties prop = PropertyUtil.load("druid.properties");
-                URL=prop.getProperty("datasource.mysql.url");
-                USERNAME=prop.getProperty("datasource.mysql.username");
-                PASSWORD=prop.getProperty("datasource.mysql.password");
-                INITIALSIZE=prop.getProperty("druid.initialSize");
-                MINIDLE=prop.getProperty("druid.minIdle");
-                MAXACTIVE=prop.getProperty("druid.maxActive");
-                MAXWAIT=prop.getProperty("druid.maxWait");
-                TIMEBETWEENEVICTIONRUNSMILLIS=prop.getProperty("druid.timeBetweenEvictionRunsMillis");
-                MINEVICTABLEIDLETIMEMILLIS=prop.getProperty("druid.minEvictableIdleTimeMillis");
-                VALIDATIONQUERY=prop.getProperty("druid.validationQuery");
-                TESTWHILEIDLE=prop.getProperty("druid.testWhileIdle");
-                TESTONBORROW=prop.getProperty("druid.testOnBorrow");
-                TESTONRETURN=prop.getProperty("druid.testOnReturn");
-                return prop;
-        }
-
-        private static DataSource initDruidFactory() throws Exception {
-                Properties props=new Properties();
-                props.put(DruidDataSourceFactory.PROP_URL,URL);
-                props.put(DruidDataSourceFactory.PROP_USERNAME, USERNAME);
-                props.put(DruidDataSourceFactory.PROP_PASSWORD, PASSWORD);
-                props.put(DruidDataSourceFactory.PROP_INITIALSIZE, INITIALSIZE);
-                props.put(DruidDataSourceFactory.PROP_MINIDLE, MINIDLE);
-                props.put(DruidDataSourceFactory.PROP_MAXACTIVE, MAXACTIVE);
-                props.put(DruidDataSourceFactory.PROP_MAXWAIT, MAXWAIT);
-                props.put(DruidDataSourceFactory.PROP_TIMEBETWEENEVICTIONRUNSMILLIS, TIMEBETWEENEVICTIONRUNSMILLIS);
-                props.put(DruidDataSourceFactory.PROP_MINEVICTABLEIDLETIMEMILLIS, MINEVICTABLEIDLETIMEMILLIS);
-                props.put(DruidDataSourceFactory.PROP_VALIDATIONQUERY, VALIDATIONQUERY);
-                props.put(DruidDataSourceFactory.PROP_TESTWHILEIDLE, TESTWHILEIDLE);
-                props.put(DruidDataSourceFactory.PROP_TESTONBORROW, TESTONBORROW);
-                props.put(DruidDataSourceFactory.PROP_TESTONRETURN, TESTONRETURN);
-                return DruidDataSourceFactory.createDataSource(props);
+        /**
+         * 数据库连接池单例
+         * @return
+         */
+        public static synchronized JdbcUtil getInstance(){
+                if (null == jdbcUtil){
+                        jdbcUtil = new JdbcUtil();
+                }
+                return jdbcUtil;
         }
 
         /**
-         * 获取数据库连接实例
+         * 返回druid数据库连接
          * @return
+         * @throws SQLException
          */
-        public static DataSource getDataSource(){
-                if(dataSource != null){
-                        return dataSource;
-                } else {
-                        return null;
-                }
+        public DruidPooledConnection getConnection() throws SQLException{
+                return druidDataSource.getConnection();
         }
 
         /**
@@ -98,7 +59,8 @@ public class JdbcUtil {
          * @return list
          */
         public static <T> List<T> queryForList(String sql, Class<T> clazz, Object... objects) throws SQLException {
-                Connection connection = dataSource.getConnection();
+                JdbcUtil jdbcUtil = JdbcUtil.getInstance();
+                DruidPooledConnection connection = jdbcUtil.getConnection();
                 PreparedStatement preparedStatement = null;
                 ResultSet resultSet = null;
                 List<T> list = new ArrayList<>();
@@ -118,7 +80,7 @@ public class JdbcUtil {
 
         }
 
-        private static void close(PreparedStatement preparedStatement, ResultSet resultSet, Connection connection) {
+        private static void close(PreparedStatement preparedStatement, ResultSet resultSet, DruidPooledConnection connection) {
                 try {
                         if(resultSet != null)
                                 resultSet.close();

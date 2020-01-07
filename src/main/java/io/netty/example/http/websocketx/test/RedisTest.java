@@ -15,35 +15,37 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class RedisTest {
 
+    private static ExecutorService executorService = Executors.newFixedThreadPool(10);
     //时间+行业=key,ip+infoId=分组
 //    private static String[] keys=new String[]{"bank","ga"};
     private static String[] keys=new String[]{"yisuo"};
-    private static Integer globalOffset=3;
+    private static Integer globalOffset=4;
 
     public static void main(String[] args) throws SQLException {
 //        RedisUtil.getJedis().del("yisuo");
 //        addData();
-//        getData();
-        List<IndustryInfo> industryInfos = JdbcUtil.queryForList("select * from test;", IndustryInfo.class, null);
-        industryInfos.forEach(System.out::println);
+        getData();
+//        List<IndustryInfo> industryInfos = JdbcUtil.queryForList("select * from test;", IndustryInfo.class, null);
+//        industryInfos.forEach(System.out::println);
     }
 
-//    @Test
     public static void addData() {
         List list=new ArrayList();
         StringBuilder jsonString=new StringBuilder("[");
 //        2000 0 0 0   500k 5m 50m 500m
 //        50*3=150M，180，0000条
-        LongStream.range(1,200000*3).forEach(l->{
+        LongStream.range(1,2000_00*3).forEach(l->{
 //            jsonString.append("{\"dstCompany\":\"一所\",\"endTime\":\"2020-04-11 15:00:00\",\"industryCode\":\"GA1\",\"infoId\":\"16\",\"ip\":\"192.168.1.1\",\"operation\":\"=\",\"score\":\"80\",\"srcCity\":\"天津\",\"srcCountry\":\"中国\",\"srcProvince\":\"天津\",\"startTime\":\"2020-02-01 01:00:00\",\"total\":\"6680\"}");
-            jsonString.append("{\"dstCompany\":\"一所\",\"endTime\":\"2020-04-11 15:00:00\",\"industryCode\":\"GA1\",\"infoId\":\"17\",\"ip\":\"192.168.1.2\",\"operation\":\"=\",\"score\":\"80\",\"srcCity\":\"天津\",\"srcCountry\":\"中国\",\"srcProvince\":\"天津\",\"startTime\":\"2020-02-01 01:00:00\",\"total\":\"6680\"}");
-//            jsonString.append("{\"dstCompany\":\"一所\",\"endTime\":\"2020-04-11 15:00:00\",\"industryCode\":\"GA1\",\"infoId\":\"18\",\"ip\":\"192.168.1.3\",\"operation\":\"=\",\"score\":\"80\",\"srcCity\":\"天津\",\"srcCountry\":\"中国\",\"srcProvince\":\"天津\",\"startTime\":\"2020-02-01 01:00:00\",\"total\":\"6680\"}");
+//            jsonString.append("{\"dstCompany\":\"一所\",\"endTime\":\"2020-04-11 15:00:00\",\"industryCode\":\"GA1\",\"infoId\":\"17\",\"ip\":\"192.168.1.2\",\"operation\":\"=\",\"score\":\"80\",\"srcCity\":\"天津\",\"srcCountry\":\"中国\",\"srcProvince\":\"天津\",\"startTime\":\"2020-02-01 01:00:00\",\"total\":\"6680\"}");
+            jsonString.append("{\"dstCompany\":\"一所\",\"endTime\":\"2020-04-11 15:00:00\",\"industryCode\":\"GA1\",\"infoId\":\"18\",\"ip\":\"192.168.1.3\",\"operation\":\"=\",\"score\":\"80\",\"srcCity\":\"天津\",\"srcCountry\":\"中国\",\"srcProvince\":\"天津\",\"startTime\":\"2020-02-01 01:00:00\",\"total\":\"6680\"}");
             if(l!=2000000){
                 jsonString.append(",");
             }
@@ -67,7 +69,7 @@ public class RedisTest {
 //        }
 //        String jsonString = JSON.toJSONString(list, SerializerFeature.DisableCircularReferenceDetect);
         Map<String,String> map=new HashMap<String,String>(){{
-            put("2",jsonString.toString());
+            put("4",jsonString.toString());
         }};
         for (String key : keys) {
             RedisUtil.getJedis().hmset(key,map);
@@ -77,7 +79,6 @@ public class RedisTest {
     public static void getData(){
         Long sTime=System.currentTimeMillis();
         List<ThreatInfo> threatInfos=new ArrayList<>();
-        List<ThreatInfo> result=new ArrayList<>();
         Jedis jedis = RedisUtil.getJedis();
         //1.按照ip,infoId分组  2.拼接industryCode  3.取最小startTime  4.取最大endTime  5.total求和
         for (String key : keys) {
@@ -90,9 +91,22 @@ public class RedisTest {
                 String value = jedis.hget(key, i+"");
                 List<ThreatInfo> threatInfo = JSONArray.parseArray(value, ThreatInfo.class);
                 if(threatInfo==null) continue;
-                threatInfos.addAll(threatInfo);
+                executorService.execute(() -> {
+                    List<ThreatInfo> dispose = dispose(threatInfo);
+                    threatInfos.addAll(dispose);
+                });
             }
         }
+        List<ThreatInfo> dispose = dispose(threatInfos);
+        dispose.stream().forEach(System.out::println);
+        Long eTime=System.currentTimeMillis();
+        System.out.println("耗时："+(eTime-sTime));
+
+    }
+
+    public static List<ThreatInfo> dispose(List<ThreatInfo> threatInfos){
+
+        List<ThreatInfo> result=new ArrayList<>();
         Map<String, List<ThreatInfo>> groupResult = threatInfos.parallelStream().collect(Collectors.groupingBy(t -> t.getIp()+"#"+t.getInfoId()));
         groupResult.entrySet().parallelStream().forEach(g -> {
             List<ThreatInfo> threatInfo = g.getValue();
@@ -116,11 +130,8 @@ public class RedisTest {
             result.add(resultThreatInfo);
 //            resultThreatInfo=null;
         });
-        Long eTime=System.currentTimeMillis();
-        System.out.println("耗时："+(eTime-sTime));
-        result.stream().forEach(System.out::println);
+        return result;
     }
-
 
     /**
      * 获取指定的时间

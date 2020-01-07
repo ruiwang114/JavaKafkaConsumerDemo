@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.example.http.websocketx.entity.ResultData;
 import io.netty.example.http.websocketx.entity.ThreatDownReq;
 import io.netty.example.http.websocketx.entity.ThreatInfo;
 import io.netty.example.http.websocketx.util.RedisUtil;
@@ -27,30 +28,35 @@ import java.util.stream.Collectors;
 @Slf4j
 public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
 
-    private Jedis jRedis;;
-
-    public DownWebSocketFrameHandler(Jedis jRedis) {
-        this.jRedis = jRedis;
-    }
-
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, WebSocketFrame frame) {
         if (frame instanceof TextWebSocketFrame) {
-            String request = ((TextWebSocketFrame) frame).text();
-            System.out.println(request);
-            ThreatDownReq threatDownReq = JSON.parseObject(request, ThreatDownReq.class);
-            //根据reqOffset判断offset: reqOffset<=globalOffset->globalOffset;reqOffset>globalOffset->reqOffset;
-            Integer globalOffset=getGlobalOffset();
-            Integer offset = Integer.parseInt(threatDownReq.getOffset()) > globalOffset ? Integer.parseInt(threatDownReq.getOffset()) : globalOffset;
-            //根据序列号信息获取行业信息key
-            String[] keys=new String[]{"bank","ga"};
-            List<ThreatInfo> threatInfos = dataAggregate(keys, offset);
-            JSONObject response=new JSONObject();
-            response.put("new_offset",offset+1);
-            response.put("threat_info",JSON.toJSONString(threatInfos));
-            ctx.channel().writeAndFlush(new TextWebSocketFrame(response.toJSONString()));
-            //释放连接
-            RedisUtil.releaseResource(jRedis);
+            Jedis jedis = RedisUtil.getJedis();
+            ResultData result=new ResultData();
+            try {
+                String request = ((TextWebSocketFrame) frame).text();
+                ThreatDownReq threatDownReq = JSON.parseObject(request, ThreatDownReq.class);
+                //根据reqOffset判断offset: reqOffset<=globalOffset->globalOffset;reqOffset>globalOffset->reqOffset;
+                Integer globalOffset=getGlobalOffset(jedis);
+                Integer offset = Integer.parseInt(threatDownReq.getOffset()) > globalOffset ? Integer.parseInt(threatDownReq.getOffset()) : globalOffset;
+                //根据序列号信息获取行业信息key
+                String[] keys=new String[]{"yisuo"};
+                //情报聚合
+                List<ThreatInfo> threatInfos = aggregateByOffset(keys, offset,jedis);
+                threatInfos = dataAggregate(threatInfos);
+                JSONObject response=new JSONObject();
+                response.put("new_offset",offset+1);
+                response.put("threat_info",threatInfos);
+                result.setMsg(response);
+                ctx.channel().writeAndFlush(new TextWebSocketFrame(JSON.toJSONString(result)));
+            }catch (Exception e){
+                log.error("DownWebSocketFrameHandler ERROR : {}",e);
+                result.setStatus(0);
+                ctx.channel().writeAndFlush(new TextWebSocketFrame(JSON.toJSONString(result)));
+            }finally {
+                //释放连接
+                RedisUtil.releaseResource(jedis);
+            }
         } else {
             String message = "unsupported frame type: " + frame.getClass().getName();
             throw new UnsupportedOperationException(message);
@@ -58,25 +64,40 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
     }
 
     /**
-     * 聚合情报数据
+     *
      * @param keys 行业key数组
      * @param offset offset值
      * @return
      */
-    public static List<ThreatInfo> dataAggregate(String[] keys,Integer offset){
+    public static List<ThreatInfo> aggregateByOffset(String[] keys,Integer offset,Jedis jedis){
+        List<ThreatInfo> threatInfos=new ArrayList<>();
+        for (String key : keys) {
+//            Map<String, String> map = jedis.hgetAll(key);
+//            map.entrySet().parallelStream().filter(m -> Integer.parseInt(m.getKey())<=offset).forEach(m -> {
+//                List<ThreatInfo> threatInfo = JSONArray.parseArray(m.getValue(), ThreatInfo.class);
+//                threatInfos.addAll(threatInfo);
+//            });
+            for(int i = 1 ; i <= offset ; i++){
+                String value = jedis.hget(key, i+"");
+                List<ThreatInfo> threatInfo = JSONArray.parseArray(value, ThreatInfo.class);
+                if(threatInfo==null) continue;
+                List<ThreatInfo> dispose = dataAggregate(threatInfo);
+                threatInfos.addAll(dispose);
+            }
+        }
+//        return dataAggregate(threatInfos);
+        return threatInfos;
+    }
+    /**
+     * 聚合情报数据
+     * @param threatInfos
+     * @return
+     */
+    public static List<ThreatInfo> dataAggregate(List<ThreatInfo> threatInfos){
 
-        Jedis jedis = RedisUtil.getJedis();
         List<ThreatInfo> result=new ArrayList<>();
         try {
-            List<ThreatInfo> threatInfos=new ArrayList<>();
             //1.按照ip,infoId分组  2.拼接industryCode  3.取最小startTime  4.取最大endTime  5.total求和
-            for (String key : keys) {
-                Map<String, String> map = jedis.hgetAll(key);
-                map.entrySet().parallelStream().filter(m -> Integer.parseInt(m.getKey())<=offset).forEach(m -> {
-                    List<ThreatInfo> threatInfo = JSONArray.parseArray(m.getValue(), ThreatInfo.class);
-                    threatInfos.addAll(threatInfo);
-                });
-            }
             Map<String, List<ThreatInfo>> groupResult = threatInfos.parallelStream().collect(Collectors.groupingBy(t -> t.getIp()+"#"+t.getInfoId()));
             groupResult.entrySet().parallelStream().forEach(g -> {
                 List<ThreatInfo> threatInfo = g.getValue();
@@ -102,8 +123,6 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
         }catch (Exception e){
             log.error("DownWebSocketFrameHandler-DataAggregate : {}",e);
             e.printStackTrace();
-        }finally {
-            RedisUtil.releaseResource(jedis);
         }
         return result;
     }
@@ -112,9 +131,8 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
      * 获取全局offset
      * @return
      */
-    public Integer getGlobalOffset(){
+    public Integer getGlobalOffset(Jedis jedis){
 
-        Jedis jedis=RedisUtil.getJedis();
         Integer globalOffset=0;
         try {
             DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ISO_LOCAL_DATE;
@@ -124,8 +142,6 @@ public class DownWebSocketFrameHandler extends SimpleChannelInboundHandler<WebSo
         }catch (Exception e){
             log.error("DownWebSocketFrameHandler-GetGlobalOffset : {}",e);
             e.printStackTrace();
-        }finally {
-            RedisUtil.releaseResource(jedis);
         }
         return 2;
     }
