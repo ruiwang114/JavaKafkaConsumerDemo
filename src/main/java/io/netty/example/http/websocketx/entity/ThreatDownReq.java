@@ -8,6 +8,6 @@ import lombok.Data;
 @Data
 public class ThreatDownReq {
 
-    private String offset;
+    private Integer offset;
     private String serial_num;
 }

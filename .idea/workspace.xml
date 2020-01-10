@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="整合mysql+druid">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ResultData.java" afterDir="false" />
+    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="情报聚合逻辑优化">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/constant/Hints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/constant/SqlDefine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/G01ThreatInfoResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/T01ThreatInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/T01ThreatInfoResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/enums/K01Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/exception/IResultMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DbUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DruidUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/PropertyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/IndustryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/ResultData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/G01ThreatInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/DownloadWebSocketServerInitializerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/DownloadWebSocketServerInitializerSSL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/HttpServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/initializer/HttpServerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/JdbcUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/StringUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +59,36 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="k01_base: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="k01_base: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="t_intelligence_tencent: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -89,31 +138,32 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ai-music" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27782887" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.netty.example.http.websocketx.handler" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.netty.example.http.websocketx.util" />
-      <recent name="io.netty.example.http.websocketx.client" />
-      <recent name="io.netty.example.http.websocketx.factory" />
-      <recent name="io.netty.example.http.websocketx.initializer" />
-      <recent name="io.netty.example.http.websocketx.server" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\JetBrains\IdeaProjects\k01datatransfer\src\main\resources" />
       <recent name="$PROJECT_DIR$/target/conf" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx" />
-      <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.netty.example.http.websocketx.entity" />
+      <recent name="io.netty.example.http.websocketx.util" />
+      <recent name="io.netty.example.http.websocketx.client" />
+      <recent name="io.netty.example.http.websocketx.factory" />
+      <recent name="io.netty.example.http.websocketx.initializer" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.netty.example.http.websocketx.handler" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -130,13 +180,27 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="DownWebSocketFrameHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.handler.DownWebSocketFrameHandler" />
+    <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.util.DateUtil" />
       <module name="netty-example" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.initializer.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.util.DbUtil" />
+      <module name="netty-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.netty.example.http.websocketx.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,13 +222,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.util.JdbcUtil" />
+    <configuration name="JdbcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.JdbcTest" />
       <module name="netty-example" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.util.*" />
+          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,23 +252,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTest.getData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netty-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.netty.example.http.websocketx.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.netty.example.http.websocketx.test" />
-      <option name="MAIN_CLASS_NAME" value="io.netty.example.http.websocketx.test.RedisTest" />
-      <option name="METHOD_NAME" value="getData" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,17 +284,17 @@
     <list>
       <item itemvalue="Application.RedisTest" />
       <item itemvalue="Application.DownloadWebSocketServerSSL" />
-      <item itemvalue="Application.DownWebSocketFrameHandler" />
-      <item itemvalue="JUnit.RedisTest.getData" />
-      <item itemvalue="Application.JdbcUtil" />
+      <item itemvalue="Application.JdbcTest" />
+      <item itemvalue="Application.DbUtil" />
+      <item itemvalue="Application.DateUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DownloadWebSocketServerSSL" />
         <item itemvalue="Application.RedisTest" />
-        <item itemvalue="Application.JdbcUtil" />
-        <item itemvalue="Application.DownWebSocketFrameHandler" />
-        <item itemvalue="JUnit.RedisTest.getData" />
+        <item itemvalue="Application.DateUtil" />
+        <item itemvalue="Application.DbUtil" />
+        <item itemvalue="Application.JdbcTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,12 +303,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - @39.107.234.35" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -297,7 +339,8 @@
       <workItem from="1578046200221" duration="295000" />
       <workItem from="1578271624841" duration="3814000" />
       <workItem from="1578279591373" duration="2775000" />
-      <workItem from="1578289198369" duration="38064000" />
+      <workItem from="1578289198369" duration="109969000" />
+      <workItem from="1578641983326" duration="3206000" />
     </task>
     <task id="LOCAL-00001" summary="1215">
       <created>1576400116193</created>
@@ -390,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578311293655</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="情报聚合逻辑优化">
+      <created>1578380635898</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578380635898</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,9 +452,14 @@
     <MESSAGE value="情报数据聚合逻辑" />
     <MESSAGE value="情报数据聚合测试" />
     <MESSAGE value="整合mysql+druid" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合mysql+druid" />
+    <MESSAGE value="情报聚合逻辑优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="情报聚合逻辑优化" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="261" y="40" key="#Auto_Import" timestamp="1578540580684">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="261" y="40" key="#Auto_Import/0.40.1536.824@0.40.1536.824" timestamp="1578540580684" />
     <state x="261" y="40" key="#Inspections" timestamp="1578306862185">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -417,14 +472,14 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="273" y="40" key="#RedisTest.getData/0.40.1536.824@0.40.1536.824" timestamp="1577789287418" />
-    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578301548042">
+    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578381078145">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1578301548042" />
-    <state x="530" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1577954707433">
+    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1578381078145" />
+    <state x="530" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1578636688146">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="530" y="96" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1577954707433" />
+    <state x="530" y="85" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1578636688146" />
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576583161450">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -433,23 +488,27 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="486" y="320" width="676" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1536.824@0.40.1536.824" timestamp="1577929974110" />
-    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578305151708">
+    <state x="62" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578446595074">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578305151708" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578377087048">
+    <state x="62" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1536.824@0.40.1536.824" timestamp="1578446595074" />
+    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578547972509">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578547972509" />
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578644025483">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091379139" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578377087048" />
-    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578376883923">
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578644025483" />
+    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578643255306">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578376883923" />
-    <state x="294" y="111" key="DiffContextDialog" timestamp="1578377085946">
+    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578643255306" />
+    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog" timestamp="1578643867981">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="294" y="111" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578377085946" />
+    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578643867981" />
     <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl" timestamp="1577788882909">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -458,50 +517,50 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog/0.40.1536.824@0.40.1536.824" timestamp="1578280837758" />
-    <state width="1485" height="181" key="GridCell.Tab.0.bottom" timestamp="1578380397400">
+    <state width="1470" height="287" key="GridCell.Tab.0.bottom" timestamp="1578643827429">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
     <state width="1878" height="316" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408233" />
     <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1485" height="181" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578380397400" />
-    <state width="1485" height="181" key="GridCell.Tab.0.center" timestamp="1578380397400">
+    <state width="1470" height="287" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
+    <state width="1470" height="287" key="GridCell.Tab.0.center" timestamp="1578643827428">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
     <state width="1878" height="316" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408231" />
     <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1485" height="181" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578380397400" />
-    <state width="1485" height="181" key="GridCell.Tab.0.left" timestamp="1578380397400">
+    <state width="1470" height="287" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578643827428" />
+    <state width="1470" height="287" key="GridCell.Tab.0.left" timestamp="1578643827428">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
     <state width="1878" height="316" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408229" />
     <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1485" height="181" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578380397400" />
-    <state width="1485" height="181" key="GridCell.Tab.0.right" timestamp="1578380397400">
+    <state width="1470" height="287" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578643827428" />
+    <state width="1470" height="287" key="GridCell.Tab.0.right" timestamp="1578643827429">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
     <state width="1878" height="316" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408232" />
     <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
-    <state width="1485" height="181" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578380397400" />
-    <state width="1485" height="181" key="GridCell.Tab.1.bottom" timestamp="1578380397236">
+    <state width="1470" height="287" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
+    <state width="1470" height="287" key="GridCell.Tab.1.bottom" timestamp="1578643827430">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="181" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578380397236" />
-    <state width="1485" height="181" key="GridCell.Tab.1.center" timestamp="1578380397235">
+    <state width="1470" height="287" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578643827430" />
+    <state width="1470" height="287" key="GridCell.Tab.1.center" timestamp="1578643827429">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="181" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578380397235" />
-    <state width="1485" height="181" key="GridCell.Tab.1.left" timestamp="1578380397235">
+    <state width="1470" height="287" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
+    <state width="1470" height="287" key="GridCell.Tab.1.left" timestamp="1578643827429">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="181" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578380397235" />
-    <state width="1485" height="181" key="GridCell.Tab.1.right" timestamp="1578380397236">
+    <state width="1470" height="287" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
+    <state width="1470" height="287" key="GridCell.Tab.1.right" timestamp="1578643827430">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="181" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578380397236" />
+    <state width="1470" height="287" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578643827430" />
     <state width="306" height="548" key="HiddenNamespacesPopup" timestamp="1578301562488">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -514,11 +573,15 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="408" y="101" key="MultipleFileMergeDialog/0.40.1536.824@0.40.1536.824" timestamp="1577692516856" />
-    <state x="214" y="40" key="SettingsEditor" timestamp="1577956005240">
+    <state x="214" y="40" key="SettingsEditor" timestamp="1578391239684">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091266949" />
-    <state x="214" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1577956005240" />
+    <state x="214" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1578391239684" />
+    <state x="422" y="135" width="762" height="655" key="StructurePopup" timestamp="1578638375845">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="422" y="135" width="762" height="655" key="StructurePopup/0.40.1536.824@0.40.1536.824" timestamp="1578638375845" />
     <state x="277" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578311304274">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -528,18 +591,22 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.40.1536.824@0.40.1536.824" timestamp="1578280651030" />
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578289347771">
+    <state x="205" y="40" width="1188" height="824" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578446849759">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578289347771" />
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578297433930">
+    <state x="205" y="40" width="1188" height="824" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.40.1536.824@0.40.1536.824" timestamp="1578446849759" />
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578642626263">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578297433930" />
-    <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1578366083404">
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578642626263" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578380640041">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="303" y="87" width="963" height="730" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1578366083404" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578380640041" />
+    <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1578536084967">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="303" y="87" width="963" height="730" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1578536084967" />
     <state x="429" y="102" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577692509506">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -548,14 +615,14 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1531" y="162" key="new project wizard/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1576650335062" />
-    <state x="341" y="203" width="840" height="1034" key="run.anything.popup" timestamp="1577956035253">
+    <state x="341" y="203" width="840" height="1034" key="run.anything.popup" timestamp="1578531711260">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="341" y="203" width="840" height="1034" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1577956035253" />
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578376616923">
+    <state x="341" y="203" width="840" height="1034" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1578531711260" />
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578643476439">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578376616923" />
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578643476439" />
     <state x="210" y="66" key="spring file set editor" timestamp="1577699264370">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -578,16 +645,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/client/WebSocketClientSSL.java</url>
           <line>81</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

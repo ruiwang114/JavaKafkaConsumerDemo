@@ -1,4 +1,4 @@
-package io.netty.example.http.websocketx.base;
+package io.netty.example.http.websocketx.util;
 
 import lombok.extern.slf4j.Slf4j;
 

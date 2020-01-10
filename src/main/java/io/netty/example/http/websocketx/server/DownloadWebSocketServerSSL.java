@@ -8,7 +8,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.DownloadWebSocketServerInitializerSSL;
 import io.netty.example.http.websocketx.initializer.HttpServerInitializer;
-import io.netty.example.http.websocketx.util.JdbcUtil;
+import io.netty.example.http.websocketx.util.DruidUtil;
 import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
@@ -44,7 +44,7 @@ public final class DownloadWebSocketServerSSL {
     public static void WssServerStart(){
         //启动redis连接池，并初始化redis，druid连接池
         RedisUtil initRedis=new RedisUtil();
-        JdbcUtil initJdbc=new JdbcUtil();
+        DruidUtil initJdbc=new DruidUtil();
         //初始化服务绑定端口
         int wssServicePort= Global.wssServicePort;
         //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，

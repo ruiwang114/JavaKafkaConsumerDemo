@@ -1,18 +1,21 @@
 package io.netty.example.http.websocketx.entity;
 
+import lombok.Builder;
 import lombok.Data;
-import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.util.List;
 
 /**
- * 威胁情报数据
+ * G01威胁情报数据
  */
+@Builder
 @Data
-@Accessors(chain = true)
-public class ThreatInfo {
+public class G01ThreatInfoResp implements Serializable  {
 
     private String ip;
 
-    private String infoId;
+    private Long infoId;
     /**
      * 操作：+ - =
      */
@@ -21,17 +24,15 @@ public class ThreatInfo {
     /**
      * 行业码
      */
-    private String industryCode;
+    private List<String> industryCode;
 
     private String startTime;
 
     private String endTime;
 
-    private String total;
+    private Long total;
 
-    private String score;
-
-    private String dstCompany;
+    private Long score;
 
     private String srcCountry;
 
