@@ -1,42 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="情报聚合逻辑优化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/constant/Hints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/constant/SqlDefine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/G01ThreatInfoResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/T01ThreatInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/T01ThreatInfoResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/enums/K01Enum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/exception/BizException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/exception/IResultMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DbUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/DruidUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="情报聚合逻辑优化,增加返回腾讯情报数据">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/PropertyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/PropertyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/IndustryInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base/ResultData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatDownReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/ThreatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/entity/G01ThreatInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/DownWebSocketFrameHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/fast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/grouping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/redis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/JdbcUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/StringUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +308,10 @@
       <workItem from="1578271624841" duration="3814000" />
       <workItem from="1578279591373" duration="2775000" />
       <workItem from="1578289198369" duration="109969000" />
-      <workItem from="1578641983326" duration="3206000" />
+      <workItem from="1578641983326" duration="3846000" />
+      <workItem from="1578876452306" duration="402000" />
+      <workItem from="1578877238665" duration="2338000" />
+      <workItem from="1578895430040" duration="6400000" />
     </task>
     <task id="LOCAL-00001" summary="1215">
       <created>1576400116193</created>
@@ -440,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578380635898</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="情报聚合逻辑优化,增加返回腾讯情报数据">
+      <created>1578656279186</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578656279187</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +431,8 @@
     <MESSAGE value="情报数据聚合测试" />
     <MESSAGE value="整合mysql+druid" />
     <MESSAGE value="情报聚合逻辑优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="情报聚合逻辑优化" />
+    <MESSAGE value="情报聚合逻辑优化,增加返回腾讯情报数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="情报聚合逻辑优化,增加返回腾讯情报数据" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="40" key="#Auto_Import" timestamp="1578540580684">
@@ -496,19 +475,19 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578547972509" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578644025483">
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578906526779">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091379139" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578644025483" />
-    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578643255306">
+    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578906526779" />
+    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578905771969">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578643255306" />
-    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog" timestamp="1578643867981">
+    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578905771969" />
+    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog" timestamp="1578906525562">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578643867981" />
+    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578906525562" />
     <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl" timestamp="1577788882909">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -517,50 +496,50 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog/0.40.1536.824@0.40.1536.824" timestamp="1578280837758" />
-    <state width="1470" height="287" key="GridCell.Tab.0.bottom" timestamp="1578643827429">
+    <state width="1485" height="254" key="GridCell.Tab.0.bottom" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
     <state width="1878" height="316" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408233" />
     <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1470" height="287" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
-    <state width="1470" height="287" key="GridCell.Tab.0.center" timestamp="1578643827428">
+    <state width="1485" height="254" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.0.center" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
     <state width="1878" height="316" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408231" />
     <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1470" height="287" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578643827428" />
-    <state width="1470" height="287" key="GridCell.Tab.0.left" timestamp="1578643827428">
+    <state width="1485" height="254" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.0.left" timestamp="1578906544364">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
     <state width="1878" height="316" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408229" />
     <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1470" height="287" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578643827428" />
-    <state width="1470" height="287" key="GridCell.Tab.0.right" timestamp="1578643827429">
+    <state width="1485" height="254" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578906544364" />
+    <state width="1485" height="254" key="GridCell.Tab.0.right" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
     <state width="1878" height="316" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408232" />
     <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
-    <state width="1470" height="287" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
-    <state width="1470" height="287" key="GridCell.Tab.1.bottom" timestamp="1578643827430">
+    <state width="1485" height="254" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.1.bottom" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1470" height="287" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578643827430" />
-    <state width="1470" height="287" key="GridCell.Tab.1.center" timestamp="1578643827429">
+    <state width="1485" height="254" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.1.center" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1470" height="287" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
-    <state width="1470" height="287" key="GridCell.Tab.1.left" timestamp="1578643827429">
+    <state width="1485" height="254" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.1.left" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1470" height="287" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578643827429" />
-    <state width="1470" height="287" key="GridCell.Tab.1.right" timestamp="1578643827430">
+    <state width="1485" height="254" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
+    <state width="1485" height="254" key="GridCell.Tab.1.right" timestamp="1578906544365">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1470" height="287" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578643827430" />
+    <state width="1485" height="254" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
     <state width="306" height="548" key="HiddenNamespacesPopup" timestamp="1578301562488">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -582,11 +561,11 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="422" y="135" width="762" height="655" key="StructurePopup/0.40.1536.824@0.40.1536.824" timestamp="1578638375845" />
-    <state x="277" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578311304274">
+    <state x="277" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578656344799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091387312" />
-    <state x="277" y="102" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1578311304274" />
+    <state x="277" y="102" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1578656344799" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1578280651030">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -595,14 +574,14 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="205" y="40" width="1188" height="824" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.40.1536.824@0.40.1536.824" timestamp="1578446849759" />
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578642626263">
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578895616123">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578642626263" />
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578380640041">
+    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578895616123" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578900476725">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578380640041" />
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578900476725" />
     <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1578536084967">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -619,10 +598,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="341" y="203" width="840" height="1034" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1578531711260" />
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578643476439">
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578905319290">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578643476439" />
+    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578905319290" />
     <state x="210" y="66" key="spring file set editor" timestamp="1577699264370">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

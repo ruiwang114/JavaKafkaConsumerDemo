@@ -27,9 +27,8 @@ import lombok.extern.slf4j.Slf4j;
 public final class DownloadWebSocketServerSSL {
 
     //加载入口参数
-//    static final boolean SSL = System.getProperty("ssl") != null;
-//    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
-//    static Producer<String, String> kafkaProducer=null;
+    static final boolean SSL = System.getProperty("ssl") != null;
+    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8080"));
 
     public static void main(String[] args) throws Exception {
         WssServerStart();
@@ -59,8 +58,8 @@ public final class DownloadWebSocketServerSSL {
                     // 设置channel类型为NIO类型
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-//                    .childHandler(new DownloadWebSocketServerInitializerSSL());
-                    .childHandler(new HttpServerInitializer());
+                    .childHandler(new DownloadWebSocketServerInitializerSSL());
+//                    .childHandler(new HttpServerInitializer());
 
             Channel ch = b.bind(wssServicePort).sync().channel();
 
@@ -73,7 +72,6 @@ public final class DownloadWebSocketServerSSL {
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
-//            kafkaProducer.close();
         }
     }
 }
