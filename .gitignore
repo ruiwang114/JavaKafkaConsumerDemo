@@ -7,4 +7,7 @@
 *.iml
 out
 gen
-!/.idea/
+.idea/
+target/classes/druid.properties
+target/classes/redis.properties
+target/generated-sources/
