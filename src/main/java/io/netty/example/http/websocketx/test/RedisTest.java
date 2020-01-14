@@ -12,8 +12,11 @@ import io.netty.example.http.websocketx.util.PropertyUtil;
 import io.netty.example.http.websocketx.util.RedisUtil;
 import kafka.utils.json.JsonObject;
 import redis.clients.jedis.Jedis;
+import sun.security.provider.MD5;
 
 import java.lang.reflect.Field;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -29,7 +32,8 @@ public class RedisTest {
     private static String[] keys=new String[]{"DX","GD"};
     private static Integer globalOffset=4;
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, NoSuchAlgorithmException {
+
 //        RedisUtil.getJedis().rpush("global_offset","{'global':20200110,'offset':1}","{'global':20200111,'offset':1}");
 //        Properties load = PropertyUtil.load("redis.properties");
 //        String property = load.getProperty("redis.hostname");
@@ -40,6 +44,8 @@ public class RedisTest {
 //        getData();
 //        List<IndustryInfo> industryInfos = JdbcUtil.queryForList("select * from test;", IndustryInfo.class, null);
 //        industryInfos.forEach(System.out::println);
+        String s = md5();
+        System.out.println(s);
     }
 
     public static void addData() {
@@ -155,4 +161,14 @@ public class RedisTest {
         return map;
     }
 
+    public static String md5() throws NoSuchAlgorithmException {
+        MessageDigest m= MessageDigest.getInstance("MD5");
+        m.update("k01WebSocket-redis".getBytes());
+        byte[] s = m.digest();
+        String result="";
+        for (int i=0; i<s.length;i++){
+            result+=Integer.toHexString((0x000000ff & s[i]) | 0xffffff00).substring(6);
+        }
+        return result;
+    }
 }

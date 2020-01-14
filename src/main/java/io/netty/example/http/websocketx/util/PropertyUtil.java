@@ -16,7 +16,8 @@ public class PropertyUtil {
 	public PropertyUtil() {
 //		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("config/parameter.properties");
 //		System.out.println(this.getClass().getClassLoader().getResource("parameter.properties").getPath());
-		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("parameter.properties");
+//		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("parameter.properties");
+		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("downparameter.properties");
 		try {
 			props.load(inputStream);
 		} catch (IOException e) {

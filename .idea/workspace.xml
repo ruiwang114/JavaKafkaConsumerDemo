@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="情报聚合逻辑优化,增加返回腾讯情报数据">
+    <list default="true" id="baaa3bb6-6776-413e-94c1-97ac0b504752" name="Default" comment="121511">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_windows_x86_64_2_0_26_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_2_0_26_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/handler/HttpRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/server/DownloadWebSocketServerSSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/test/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/PropertyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/util/PropertyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/downparameter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/downparameter.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,39 +35,8 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="k01_base: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="k01_base@192.168.3.98" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="k01_base: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_intelligence_tencent: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -76,17 +53,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="jdk8" />
-      </list>
-    </option>
-    <option name="disabledProfiles">
-      <list>
-        <option value="java11" />
-        <option value="not_x86_64" />
-      </list>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dcheckstyle.skip=true" />
@@ -101,44 +67,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yunsuo-parent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27782887" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.splitter.proportion" value="0.24377224" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.netty.example.http.websocketx.client" />
+      <recent name="io.netty.example.http.websocketx.factory" />
+      <recent name="io.netty.example.http.websocketx.initializer" />
+      <recent name="io.netty.example.http.websocketx.server" />
+      <recent name="io.netty.example.http.websocketx.base" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\develop\JetBrains\IdeaProjects\k01datatransfer\src\main\resources" />
       <recent name="$PROJECT_DIR$/target/conf" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/base" />
       <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/netty/example/http/websocketx/twoway" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io.netty.example.http.websocketx.entity" />
-      <recent name="io.netty.example.http.websocketx.util" />
-      <recent name="io.netty.example.http.websocketx.client" />
-      <recent name="io.netty.example.http.websocketx.factory" />
-      <recent name="io.netty.example.http.websocketx.initializer" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.netty.example.http.websocketx.handler" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn package" />
-      <command value="mvn package -Dmaven.test.skip=true" />
-    </option>
   </component>
   <component name="RunManager" selected="Application.DownloadWebSocketServerSSL">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -299,19 +255,7 @@
       <workItem from="1576809987229" duration="1292000" />
       <workItem from="1576816345307" duration="1640000" />
       <workItem from="1576928682997" duration="2686000" />
-      <workItem from="1577699083951" duration="26502000" />
-      <workItem from="1577789473533" duration="779000" />
-      <workItem from="1577925143346" duration="27162000" />
-      <workItem from="1578010879114" duration="6089000" />
-      <workItem from="1578046078708" duration="72000" />
-      <workItem from="1578046200221" duration="295000" />
-      <workItem from="1578271624841" duration="3814000" />
-      <workItem from="1578279591373" duration="2775000" />
-      <workItem from="1578289198369" duration="109969000" />
-      <workItem from="1578641983326" duration="3846000" />
-      <workItem from="1578876452306" duration="402000" />
-      <workItem from="1578877238665" duration="2338000" />
-      <workItem from="1578895430040" duration="6400000" />
+      <workItem from="1578906854354" duration="8050000" />
     </task>
     <task id="LOCAL-00001" summary="1215">
       <created>1576400116193</created>
@@ -383,43 +327,17 @@
       <option name="project" value="LOCAL" />
       <updated>1577091379313</updated>
     </task>
-    <task id="LOCAL-00011" summary="情报数据聚合逻辑">
-      <created>1577790121967</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1577790121967</updated>
-    </task>
-    <task id="LOCAL-00012" summary="情报数据聚合测试">
-      <created>1578043003210</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1578043003210</updated>
-    </task>
-    <task id="LOCAL-00013" summary="整合mysql+druid">
-      <created>1578311293655</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1578311293655</updated>
-    </task>
-    <task id="LOCAL-00014" summary="情报聚合逻辑优化">
-      <created>1578380635898</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1578380635898</updated>
-    </task>
-    <task id="LOCAL-00015" summary="情报聚合逻辑优化,增加返回腾讯情报数据">
-      <created>1578656279186</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1578656279187</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -427,185 +345,83 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1215" />
     <MESSAGE value="121511" />
-    <MESSAGE value="情报数据聚合逻辑" />
-    <MESSAGE value="情报数据聚合测试" />
-    <MESSAGE value="整合mysql+druid" />
-    <MESSAGE value="情报聚合逻辑优化" />
-    <MESSAGE value="情报聚合逻辑优化,增加返回腾讯情报数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="情报聚合逻辑优化,增加返回腾讯情报数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="121511" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="261" y="40" key="#Auto_Import" timestamp="1578540580684">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="261" y="40" key="#Auto_Import/0.40.1536.824@0.40.1536.824" timestamp="1578540580684" />
-    <state x="261" y="40" key="#Inspections" timestamp="1578306862185">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="261" y="40" key="#Inspections/0.40.1536.824@0.40.1536.824" timestamp="1578306862185" />
-    <state x="261" y="40" key="#Project_Structure" timestamp="1577699794785">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="261" y="40" key="#Project_Structure/0.40.1536.824@0.40.1536.824" timestamp="1577699794785" />
-    <state x="273" y="40" key="#RedisTest.getData" timestamp="1577789287418">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="273" y="40" key="#RedisTest.getData/0.40.1536.824@0.40.1536.824" timestamp="1577789287418" />
-    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578381078145">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="361" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1578381078145" />
-    <state x="530" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1578636688146">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="530" y="85" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1578636688146" />
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576583161450">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1848.23.1848.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1576583161450" />
-    <state x="486" y="320" width="676" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577929974110">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="486" y="320" width="676" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1536.824@0.40.1536.824" timestamp="1577929974110" />
-    <state x="62" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578446595074">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="62" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1536.824@0.40.1536.824" timestamp="1578446595074" />
-    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578547972509">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="436" y="143" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578547972509" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2" timestamp="1578906526779">
+    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1578972339049">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1332" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091379139" />
-    <state x="222" y="76" width="1050" height="718" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578906526779" />
-    <state width="929" height="564" key="DebuggerActiveHint" timestamp="1578905771969">
+    <state x="0" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1578972339049" />
+    <state x="147" y="111" key="DiffContextDialog" timestamp="1578972335917">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="929" height="564" key="DebuggerActiveHint/0.40.1536.824@0.40.1536.824" timestamp="1578905771969" />
-    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog" timestamp="1578906525562">
+    <state x="147" y="111" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578972335917" />
+    <state x="502" y="152" key="FileChooserDialogImpl" timestamp="1578912476054">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="220" y="115" width="1177" height="681" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1578906525562" />
-    <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl" timestamp="1577788882909">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="499" y="152" width="634" height="631" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1577788882909" />
-    <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog" timestamp="1578280837758">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="560" y="327" width="478" height="249" key="Github.CreateGistDialog/0.40.1536.824@0.40.1536.824" timestamp="1578280837758" />
-    <state width="1485" height="254" key="GridCell.Tab.0.bottom" timestamp="1578906544365">
+    <state x="502" y="152" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1578912476054" />
+    <state width="1485" height="325" key="GridCell.Tab.0.bottom" timestamp="1578972200227">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424420" />
     <state width="1878" height="316" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408233" />
     <state width="1638" height="306" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465778" />
-    <state width="1485" height="254" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.0.center" timestamp="1578906544365">
+    <state width="1485" height="325" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578972200227" />
+    <state width="1485" height="325" key="GridCell.Tab.0.center" timestamp="1578972200227">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424416" />
     <state width="1878" height="316" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408231" />
     <state width="1638" height="306" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465776" />
-    <state width="1485" height="254" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.0.left" timestamp="1578906544364">
+    <state width="1485" height="325" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578972200227" />
+    <state width="1485" height="325" key="GridCell.Tab.0.left" timestamp="1578972200227">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424415" />
     <state width="1878" height="316" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408229" />
     <state width="1638" height="306" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465775" />
-    <state width="1485" height="254" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578906544364" />
-    <state width="1485" height="254" key="GridCell.Tab.0.right" timestamp="1578906544365">
+    <state width="1485" height="325" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578972200227" />
+    <state width="1485" height="325" key="GridCell.Tab.0.right" timestamp="1578972200227">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/-1851.23.1851.1057/0.23.1680.1027@-1851.23.1851.1057" timestamp="1576636424417" />
     <state width="1878" height="316" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091408232" />
     <state width="1638" height="306" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576890465777" />
-    <state width="1485" height="254" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.1.bottom" timestamp="1578906544365">
+    <state width="1485" height="325" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578972200227" />
+    <state x="147" y="110" key="MergeDialog" timestamp="1578907122804">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="254" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.1.center" timestamp="1578906544365">
+    <state x="147" y="110" key="MergeDialog/0.40.1536.824@0.40.1536.824" timestamp="1578907122804" />
+    <state x="408" y="101" key="MultipleFileMergeDialog" timestamp="1578907127569">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1485" height="254" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.1.left" timestamp="1578906544365">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1485" height="254" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="1485" height="254" key="GridCell.Tab.1.right" timestamp="1578906544365">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="1485" height="254" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1578906544365" />
-    <state width="306" height="548" key="HiddenNamespacesPopup" timestamp="1578301562488">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state width="306" height="548" key="HiddenNamespacesPopup/0.40.1536.824@0.40.1536.824" timestamp="1578301562488" />
-    <state x="186" y="40" key="Maven.ArtifactSearchDialog" timestamp="1577698178517">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="186" y="40" key="Maven.ArtifactSearchDialog/0.40.1536.824@0.40.1536.824" timestamp="1577698178517" />
-    <state x="408" y="101" key="MultipleFileMergeDialog" timestamp="1577692516856">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="408" y="101" key="MultipleFileMergeDialog/0.40.1536.824@0.40.1536.824" timestamp="1577692516856" />
-    <state x="214" y="40" key="SettingsEditor" timestamp="1578391239684">
+    <state x="408" y="101" key="MultipleFileMergeDialog/0.40.1536.824@0.40.1536.824" timestamp="1578907127569" />
+    <state x="202" y="40" key="SettingsEditor" timestamp="1578971826776">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091266949" />
-    <state x="214" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1578391239684" />
-    <state x="422" y="135" width="762" height="655" key="StructurePopup" timestamp="1578638375845">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="422" y="135" width="762" height="655" key="StructurePopup/0.40.1536.824@0.40.1536.824" timestamp="1578638375845" />
-    <state x="277" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578656344799">
-      <screen x="0" y="40" width="1536" height="824" />
+    <state x="202" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1578971826776" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1577091387312">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1577091387312" />
-    <state x="277" y="102" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1578656344799" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1578280651030">
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578907008087">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.40.1536.824@0.40.1536.824" timestamp="1578280651030" />
-    <state x="205" y="40" width="1188" height="824" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578446849759">
+    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578907008087" />
+    <state x="433" y="102" key="git4idea.branch.GitSmartOperationDialog" timestamp="1578907093846">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="205" y="40" width="1188" height="824" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.40.1536.824@0.40.1536.824" timestamp="1578446849759" />
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1578895616123">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="385" y="237" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578895616123" />
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578900476725">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="526" y="351" width="529" height="201" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1578900476725" />
-    <state x="303" y="87" width="963" height="730" key="find.popup" timestamp="1578536084967">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="303" y="87" width="963" height="730" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1578536084967" />
-    <state x="429" y="102" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577692509506">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="429" y="102" key="git4idea.branch.GitSmartOperationDialog/0.40.1536.824@0.40.1536.824" timestamp="1577692509506" />
+    <state x="433" y="102" key="git4idea.branch.GitSmartOperationDialog/0.40.1536.824@0.40.1536.824" timestamp="1578907093846" />
     <state x="-1531" y="162" key="new project wizard" timestamp="1576650335062">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1531" y="162" key="new project wizard/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1576650335062" />
-    <state x="341" y="203" width="840" height="1034" key="run.anything.popup" timestamp="1578531711260">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="341" y="203" width="840" height="1034" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1578531711260" />
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup" timestamp="1578905319290">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="347" y="40" width="840" height="822" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1578905319290" />
-    <state x="210" y="66" key="spring file set editor" timestamp="1577699264370">
-      <screen x="0" y="40" width="1536" height="824" />
-    </state>
-    <state x="210" y="66" key="spring file set editor/0.40.1536.824@0.40.1536.824" timestamp="1577699264370" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,10 +443,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/netty_example$RedisTest_getData.ic" NAME="RedisTest.getData Coverage Results" MODIFIED="1577789301655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>io.netty.example.http.websocketx.test.*</FILTER>
-    </SUITE>
   </component>
 </project>

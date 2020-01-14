@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Maven: io.netty:netty-tcnative:windows-x86_64:2.0.26.Final">
+  <library name="Maven: io.netty:netty-tcnative:2.0.26.Final">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/io/netty/netty-tcnative/2.0.26.Final/netty-tcnative-2.0.26.Final-windows-x86_64.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/io/netty/netty-tcnative/2.0.26.Final/netty-tcnative-2.0.26.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.m2/repository/io/netty/netty-tcnative/2.0.26.Final/netty-tcnative-2.0.26.Final-javadoc.jar!/" />
