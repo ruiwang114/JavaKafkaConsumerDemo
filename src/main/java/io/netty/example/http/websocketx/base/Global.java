@@ -1,5 +1,6 @@
 package io.netty.example.http.websocketx.base;
 
+import io.netty.example.http.websocketx.util.PropertyUtil;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -23,7 +24,7 @@ public class Global {
 
 	static {
 		log.info("开始加载配置文件");
-		rootKeyStorePath=PropertyUtil.getInstance().read("rootKeyStorePath");
+		rootKeyStorePath= PropertyUtil.getInstance().read("rootKeyStorePath");
 		rootCertificatePassword=PropertyUtil.getInstance().read("rootCertificatePassword");
 
 		serverKeyStorePath= PropertyUtil.getInstance().read("serverKeyStorePath");

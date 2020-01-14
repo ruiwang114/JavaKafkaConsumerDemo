@@ -5,7 +5,6 @@ import io.netty.example.http.websocketx.base.Global;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
-import javax.xml.bind.annotation.XmlElementDecl;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;

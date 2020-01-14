@@ -7,7 +7,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 
 @Slf4j
-public class RedisUtil {
+public class RedisUtilTest {
 
     //服务器IP地址
     private static String ADDR = "127.0.0.1";

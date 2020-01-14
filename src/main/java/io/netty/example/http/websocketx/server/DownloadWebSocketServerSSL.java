@@ -7,14 +7,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.example.http.websocketx.base.Global;
 import io.netty.example.http.websocketx.initializer.DownloadWebSocketServerInitializerSSL;
-import io.netty.example.http.websocketx.test.RedisUtil;
+import io.netty.example.http.websocketx.initializer.HttpServerInitializer;
+import io.netty.example.http.websocketx.util.DruidUtil;
+import io.netty.example.http.websocketx.util.RedisUtil;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.producer.Producer;
-import redis.clients.jedis.Jedis;
-
-import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.InitConnect;
 
 
 /**
@@ -30,8 +28,7 @@ public final class DownloadWebSocketServerSSL {
 
     //加载入口参数
 //    static final boolean SSL = System.getProperty("ssl") != null;
-//    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
-    static Producer<String, String> kafkaProducer=null;
+//    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8080"));
 
     public static void main(String[] args) throws Exception {
         WssServerStart();
@@ -44,8 +41,9 @@ public final class DownloadWebSocketServerSSL {
      * @throws InterruptedException
      */
     public static void WssServerStart(){
-        //启动redis连接池，并获取edis连接
-        Jedis jRedis= RedisUtil.getJedis();
+        //启动redis连接池，并初始化redis，druid连接池
+        RedisUtil initRedis=new RedisUtil();
+        DruidUtil initJdbc=new DruidUtil();
         //初始化服务绑定端口
         int wssServicePort= Global.wssServicePort;
         //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，
@@ -60,7 +58,8 @@ public final class DownloadWebSocketServerSSL {
                     // 设置channel类型为NIO类型
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new DownloadWebSocketServerInitializerSSL(jRedis));
+                    .childHandler(new DownloadWebSocketServerInitializerSSL());
+//                    .childHandler(new HttpServerInitializer());
 
             Channel ch = b.bind(wssServicePort).sync().channel();
 
@@ -73,7 +72,6 @@ public final class DownloadWebSocketServerSSL {
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
-            kafkaProducer.close();
         }
     }
 }

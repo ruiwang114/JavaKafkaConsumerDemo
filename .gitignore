@@ -1,7 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
 
-#
-# native udt library extract location
-#
-
-/lib
-
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+!/.idea/

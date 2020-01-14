@@ -11,8 +11,6 @@ import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler;
 import io.netty.handler.ssl.SslHandler;
-import org.apache.kafka.clients.producer.Producer;
-import redis.clients.jedis.Jedis;
 
 import javax.net.ssl.SSLEngine;
 
@@ -33,12 +31,6 @@ public class DownloadWebSocketServerInitializerSSL extends ChannelInitializer<So
      * 下载功能url:wss://domain:port/download
      */
     private static String WEBSOCKET_PATH = "";
-
-    private Jedis jRedis;
-
-    public DownloadWebSocketServerInitializerSSL(Jedis jRedis) {
-        this.jRedis = jRedis;
-    }
 
     @Override
     public void initChannel(SocketChannel ch) throws Exception {
@@ -61,6 +53,6 @@ public class DownloadWebSocketServerInitializerSSL extends ChannelInitializer<So
         pipeline.addLast(new WebSocketServerCompressionHandler());
         pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
         //Handler
-        pipeline.addLast(new DownWebSocketFrameHandler(jRedis));
+        pipeline.addLast(new DownWebSocketFrameHandler());
     }
 }
