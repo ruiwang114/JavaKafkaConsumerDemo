@@ -27,8 +27,10 @@ import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler;
 import io.netty.handler.ssl.SslHandler;
+import io.netty.handler.timeout.IdleStateHandler;
 import org.apache.kafka.clients.producer.Producer;
 import javax.net.ssl.SSLEngine;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -39,6 +41,11 @@ import javax.net.ssl.SSLEngine;
  *Date 20191217
  */
 public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChannel> {
+
+    private static final int READ_IDEL_TIME_OUT=60;
+    private static final int WRITE_IDEL_TIME_OUT=30;
+    private static final int ALL_IDEL_TIME_OUT=30;
+
 
     /**
      * 用于控制wss接口功能
@@ -51,6 +58,7 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
     private Producer<String, String> kafkaProducer;
 
     public WebSocketServerInitializerSSL(Producer<String, String> kafkaProducer) {
+        //kafka生产者对象
         this.kafkaProducer = kafkaProducer;
     }
 
@@ -71,13 +79,20 @@ public class WebSocketServerInitializerSSL extends ChannelInitializer<SocketChan
 //        engine.setNeedClientAuth();
 
 
-
+        //添加SSL认证
         pipeline.addLast("ssl", new SslHandler(engine));
+        //HttpServerCodec:将HTTP客户端请求转成HttpRequest对象，将HttpResponse对象编码成HTTP响应发送给客户端
         pipeline.addLast(new HttpServerCodec());
-        pipeline.addLast(new HttpObjectAggregator(65536));
+        //请求服务器的时候，对应的参数信息是保存在message body中的,如果只是单纯的用HttpServerCodec
+        //是无法完全的解析请求的，因为HttpServerCodec只能获取uri中参数，所以需要加上HttpObjectAggregator.
+        pipeline.addLast(new HttpObjectAggregator(6553500));
+        //WebSocket数据压缩
         pipeline.addLast(new WebSocketServerCompressionHandler());
-        pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
-        //Handler
+        //WebSocket处理器
+        pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true,6553500));
+        //心跳设置
+//        pipeline.addLast(new IdleStateHandler(READ_IDEL_TIME_OUT,WRITE_IDEL_TIME_OUT,ALL_IDEL_TIME_OUT, TimeUnit.SECONDS));
+        //注册Handler
         pipeline.addLast(new WebSocketFrameHandler(kafkaProducer));
     }
 }

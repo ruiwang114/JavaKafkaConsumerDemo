@@ -18,9 +18,12 @@ public class Global {
 	public static String websocketPath = null;
 
 	public static int wssServicePort=0;
+	public static int wssServicePort1=0;
+	public static int wssServicePort2=0;
 
 	public static String bootStrapServers=null;
 	public static String topic=null;
+	public static String topics=null;
 
 	static {
 		log.info("开始加载配置文件");
@@ -33,11 +36,14 @@ public class Global {
 		clientKeyStorePath=PropertyUtil.getInstance().read("clientKeyStorePath");
 		clientCertificatePassword= PropertyUtil.getInstance().read("clientCertificatePassword");
 
-		wssServicePort=Integer.parseInt(PropertyUtil.getInstance().read("wssServicePort"));
+//		wssServicePort=Integer.parseInt(PropertyUtil.getInstance().read("wssServicePort"));
+		wssServicePort1=Integer.parseInt(PropertyUtil.getInstance().read("wssServicePort1"));
+		wssServicePort2=Integer.parseInt(PropertyUtil.getInstance().read("wssServicePort2"));
 		websocketPath=PropertyUtil.getInstance().read("websocketPath");
 
 		bootStrapServers=PropertyUtil.getInstance().read("bootStrapServers");
 		topic=PropertyUtil.getInstance().read("topic");
+		topics=PropertyUtil.getInstance().read("topics");
 		log.info("配置文件加载完毕");
 	}
 }

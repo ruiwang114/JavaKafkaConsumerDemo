@@ -16,13 +16,16 @@ import java.util.Properties;
  *Date 20191217
  */
 @Slf4j
-public class KafkaClient {
+public class KafkaClientCopy {
 
 
     public static void main(String[] args) {
         try {
+            //初始化kafka连接对象，并进行设置优化
             Producer<String, String> producer=InitConnect();
-            kafkaSend(producer,"test","");
+            //发送数据，k01msg为发送的内容
+            kafkaSend(producer,"test");
+            producer.close();
         }catch(Exception err){
             err.printStackTrace();
 
@@ -40,12 +43,12 @@ public class KafkaClient {
         Properties props = new Properties();
 //        props.put("type","async");
 //        props.put("bootstrap.servers", "localhost:9092");
-        props.put("bootstrap.servers", Global.bootStrapServers);
+        props.put("bootstrap.servers", "192.168.1.108:9092");
         props.put("acks", "0");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("batch.size", "16384");//约160M
-        props.put("linger.ms", 100);
+        props.put("linger.ms", 1);
         props.put("buffer.memory", "33554432");//约32M
         props.put("compression.type", "lz4");
 //        props.put("client.id", "producer"+random());
@@ -62,19 +65,9 @@ public class KafkaClient {
      * @param producer kafka连接对象
      * @param k01Msg 发送的消息
      */
-    public static void kafkaSend(Producer<String, String> producer,String k01Msg,String topicNum){
+    public static void kafkaSend(Producer<String, String> producer,String k01Msg){
         try {
-//            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test1205", k01Msg);
-            //声明发送消息对象，Global.topic在配置文件中配置topic名称
-//            ProducerRecord<String, String> record = new ProducerRecord<String, String>(Global.topic, k01Msg); //测试用
-
-
-            JSONObject topicJson=JSONObject.parseObject(Global.topics);
-//            log.info("当前topic: "+topicJson.getString(topicNum));
-//            System.out.println("当前topic: "+topicJson.getString(topicNum));
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicJson.getString(topicNum), k01Msg);
-//            producer.send(record);
-//            System.out.println("消息发送成功:" + msg);
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("g01_v2", k01Msg);
             producer.send(record, new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata recordMetadata, Exception e) {

@@ -24,7 +24,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.example.http.websocketx.factory.OldSecureChatSslContextFactory;
+import io.netty.example.http.websocketx.factory.OpenSecureChatSslContextFactory;
 import io.netty.example.http.websocketx.handler.WebSocketClientHandler;
 import io.netty.handler.codec.http.DefaultHttpHeaders;
 import io.netty.handler.codec.http.HttpClientCodec;
@@ -39,10 +39,11 @@ import java.io.InputStreamReader;
 import java.net.URI;
 
 
-public final class OldWebSocketClientSSL {
+public final class UpWebSocketClientSSL {
 
-//    static final String URL = System.getProperty("url", "wss://127.0.0.1:18743/websocket");
     static final String URL = System.getProperty("url", "wss://127.0.0.1:9994/upload");
+//    static final String URL = System.getProperty("url", "wss://k01.weishi110.cn:9995/download");
+//    static final String URL = System.getProperty("url", "wss://k01.weishi110.cn:9994/upload");
 
     public static void main(String[] args) throws Exception {
         URI uri = new URI(URL);
@@ -75,13 +76,15 @@ public final class OldWebSocketClientSSL {
             final WebSocketClientHandler handler =
                     new WebSocketClientHandler(
                             WebSocketClientHandshakerFactory.newHandshaker(
-                                    uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders()));
+                                    uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders(),Integer.MAX_VALUE));
 
             Bootstrap b = new Bootstrap();
-            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
-
-            final SSLEngine engine = OldSecureChatSslContextFactory.getClientContext(cChatPath,cChatPath).createSSLEngine("localhost",port);
+//            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
+            String cChatPath =  "/Users/aRi/Desktop/testIJGit/k01datatransfer/opencertsused/client.p12";
+            String cTrustPath = "/Users/aRi/Desktop/testIJGit/k01datatransfer/opencertsused/root.p12";
+            final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine("k01.weishi110.cn",port);
             engine.setUseClientMode(true);
+
             b.group(group)
              .channel(NioSocketChannel.class)
              .handler(new ChannelInitializer<SocketChannel>() {
@@ -104,6 +107,8 @@ public final class OldWebSocketClientSSL {
             handler.handshakeFuture().sync();
 
             BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+            int i=0;
+
             while (true) {
                 System.out.print("输入消息：");
                 String msg = console.readLine();
@@ -123,6 +128,46 @@ public final class OldWebSocketClientSSL {
                 System.out.println("休息3秒");
                 Thread.sleep(3000);
             }
+
+//            while (true) {
+//                System.out.print("请求第  "+i+"  次");
+//
+//                String msg="{\"offset\":1,\"serial_num\":\"authcodeHou\"}";
+//                WebSocketFrame frame = new TextWebSocketFrame(msg);
+//                ch.writeAndFlush(frame);
+//                i++;
+//                if (i%2==0){
+//            System.out.println( System.currentTimeMillis());
+//                    System.out.println("休息1分钟");
+//                    Thread.sleep(60000);
+//                }
+//
+//            }
+
+//            while (true) {
+//                System.out.println("第  "+i+"  次输入信息：");
+////                String msg = console.readLine();
+//                String msg="{\"offset\":1,\"serial_num\":\"authcodeHou\"}";
+//                if (msg == null) {
+//                    break;
+//                } else if ("bye".equals(msg.toLowerCase())) {
+//                    ch.writeAndFlush(new CloseWebSocketFrame());
+//                    ch.closeFuture().sync();
+//                    break;
+//                } else if ("ping".equals(msg.toLowerCase())) {
+//                    WebSocketFrame frame = new PingWebSocketFrame(Unpooled.wrappedBuffer(new byte[] { 8, 1, 8, 1 }));
+//                    ch.writeAndFlush(frame);
+//                } else {
+//                    WebSocketFrame frame = new TextWebSocketFrame(msg);
+//                    System.out.println( System.currentTimeMillis());
+//                    ch.writeAndFlush(frame);
+//                }
+//                i++;
+//                if(i==100) {
+//                    System.out.println("休息60000秒");
+//                    Thread.sleep(60000000);
+//                }
+//            }
         } finally {
             group.shutdownGracefully();
         }

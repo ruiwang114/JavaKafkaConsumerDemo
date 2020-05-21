@@ -1,33 +1,24 @@
-/*
- * Copyright 2012 The Netty Project
- *
- * The Netty Project licenses this file to you under the Apache License,
- * version 2.0 (the "License"); you may not use this file except in compliance
- * with the License. You may obtain a copy of the License at:
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations
- * under the License.
- */
 package io.netty.example.http.websocketx.handler;
-
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.example.http.websocketx.base.Global;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketFrame;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.Producer;
 
-import java.util.Locale;
 
 import static io.netty.example.http.websocketx.kafkaproducer.KafkaClient.kafkaSend;
 
 /**
- * Echoes uppercase content of text frames.
+ * Netty websocket handler.
+ *
+ * @author wr
+ * @date 20200316
  */
+@Slf4j
 public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
 
     private Producer<String, String> kafkaProducer;
@@ -38,17 +29,43 @@ public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocket
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, WebSocketFrame frame) throws Exception {
-        // ping and pong frames already handled
+        try {
+            if (frame instanceof TextWebSocketFrame) {
+                //获取当前请求内容字符串
+                String request = ((TextWebSocketFrame) frame).text();
+                //转为json
+                JSONObject json = JSONObject.parseObject(request);
+                JSONArray jsonArray = json.getJSONArray("data");
+                String company=json.getString("company");
+                JSONObject topicJson=JSONObject.parseObject(Global.topics);
+                if(!topicJson.containsKey(company)){
+                    System.out.println("company code error");
+                    ctx.channel().writeAndFlush(new TextWebSocketFrame("{\"code\":\"400\",\"msg\":\"company code error\"}"));
+                }else {//获取Json中data数组，数组内为K01日志
+                    //遍历K01日志，并写入kafka
+                    for (int i = 0; i < jsonArray.size(); i++) {
+                        json = JSONObject.parseObject(jsonArray.getString(i));
+                        kafkaSend(kafkaProducer, json.toJSONString(), company);
+                    }
+                    //写入完成后，返回success
+                    ctx.channel().writeAndFlush(new TextWebSocketFrame("{\"code\":\"200\",\"msg\":\"success\"}"));
+                }
 
-        if (frame instanceof TextWebSocketFrame) {
-            // Send the uppercase string back.
-            String request = ((TextWebSocketFrame) frame).text();
-            ctx.channel().writeAndFlush(new TextWebSocketFrame(request.toUpperCase(Locale.US)));
-            kafkaSend(kafkaProducer,request);
 //            System.out.println(request);
-        } else {
-            String message = "unsupported frame type: " + frame.getClass().getName();
-            throw new UnsupportedOperationException(message);
+            } else {
+                String message = "unsupported frame type: " + frame.getClass().getName();
+                throw new UnsupportedOperationException(message);
+            }
+        }catch (Exception err){
+            ctx.channel().writeAndFlush(new TextWebSocketFrame("{\"code\":\"400\",\"msg\":\""+err+"\"}"));
         }
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+        cause.printStackTrace();
+        ctx.channel().writeAndFlush(new TextWebSocketFrame("{\"code\":\"400\",\"msg\":\""+cause.toString()+"\"}"));
+
+        ctx.close();
     }
 }

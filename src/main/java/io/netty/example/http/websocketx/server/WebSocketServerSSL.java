@@ -43,11 +43,17 @@ public final class WebSocketServerSSL {
 
     //加载入口参数
 //    static final boolean SSL = System.getProperty("ssl") != null;
-//    static final int PORT = Integer.pars、eInt(System.getProperty("port", SSL? "8443" : "8080"));
+//    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8080"));
     static Producer<String, String> kafkaProducer=null;
 
+    /**
+     * main函数
+     *
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
-        WssDownloadServerStart();
+        WssUploadServerStart();
     }
 
     /**
@@ -56,11 +62,10 @@ public final class WebSocketServerSSL {
      * @return
      * @throws InterruptedException
      */
-    public static void WssDownloadServerStart(){
+    public static void WssUploadServerStart(){
         //初始化Kafka生产者
         kafkaProducer=InitConnect();
         //初始化服务绑定端口
-        int wssServicePort= Global.wssServicePort;
         //bossGroup 线程池则只是在 Bind 某个端口后，获得其中一个线程作为 MainReactor，专门处理端口的 Accept 事件，
         //每个端口对应一个 Boss 线程
         EventLoopGroup bossGroup = new NioEventLoopGroup();
@@ -73,13 +78,19 @@ public final class WebSocketServerSSL {
                     // 设置channel类型为NIO类型
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
+                    //ChannelInitializer继承了ChannelInboundHandlerAdapter类，所以它是一个入站处理器，当这个参数调用它的initChannel方法的时候就会去初始化ChannelPipeline
                     .childHandler(new WebSocketServerInitializerSSL(kafkaProducer));
 
-            Channel ch = b.bind(wssServicePort).sync().channel();
+            //启动端口：8000
+            Channel ch = b.bind(Global.wssServicePort1).sync().channel();
+            log.info("wss下载服务已在本地端口： " + Global.wssServicePort1 + "绑定并启动");
 
-            log.info("wss下载服务已在本地端口： " + wssServicePort + "绑定并启动");
+            //启动端口1：8001
+            Channel ch1 = b.bind(Global.wssServicePort2).sync().channel();
+            log.info("wss下载服务已在本地端口： " + Global.wssServicePort2 + "绑定并启动");
 
             ch.closeFuture().sync();
+            ch1.closeFuture().sync();
 
         } catch (InterruptedException e) {
             e.printStackTrace();

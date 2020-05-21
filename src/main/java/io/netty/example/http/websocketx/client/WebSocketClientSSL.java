@@ -15,6 +15,9 @@
  */
 package io.netty.example.http.websocketx.client;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
@@ -42,9 +45,9 @@ import java.net.URI;
 
 public final class WebSocketClientSSL {
 
-//    static final String URL = System.getProperty("url", "wss://127.0.0.1:9994/upload");
-    static final String URL = System.getProperty("url", "wss://k01.weishi110.cn:9994/upload");
-//    static final String URL = System.getProperty("url", "wss://114.242.143123123.146:9994/upload");
+//    static final String URL = System.getProperty("url", "wss://127.0.0.1:3101/upload");
+//    static final String URL = System.getProperty("url", "wss://k01.weishi110.cn:9995/download");
+    static final String URL = System.getProperty("url", "wss://k01.weishi110.cn:9995/upload");
 
     public static void main(String[] args) throws Exception {
         URI uri = new URI(URL);
@@ -77,13 +80,16 @@ public final class WebSocketClientSSL {
             final WebSocketClientHandler handler =
                     new WebSocketClientHandler(
                             WebSocketClientHandshakerFactory.newHandshaker(
-                                    uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders()));
+                                    uri, WebSocketVersion.V13, null, true, new DefaultHttpHeaders(),Integer.MAX_VALUE));
 
             Bootstrap b = new Bootstrap();
 //            String cChatPath =  System.getProperty("user.dir")+"/src/main/java/io/netty/example/http/websocketx/conf/twoway/cChat.jks";
-            String cChatPath =  "/Users/aRi/Downloads/netty-4.1/example/opensslcert/client.p12";
-            String cTrustPath = "/Users/aRi/Downloads/netty-4.1/example/opensslcert/root.p12";
-            final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine("k01.weishi110.cn",port);
+//            String cChatPath =  "/Users/aRi/Desktop/testIJGit/k01datatransfer/opencertsused/client.p12";
+//            String cTrustPath = "/Users/aRi/Desktop/testIJGit/k01datatransfer/opencertsused/root.p12";
+
+            String cChatPath =  "/Users/aRi/Desktop/testIJGit/k01datatransfer/cert0401/client.p12";
+            String cTrustPath = "/Users/aRi/Desktop/testIJGit/k01datatransfer/cert0401/ca.p12";
+            final SSLEngine engine = OpenSecureChatSslContextFactory.getClientContext(cChatPath,cTrustPath).createSSLEngine(host,port);
             engine.setUseClientMode(true);
 
             b.group(group)
@@ -108,25 +114,115 @@ public final class WebSocketClientSSL {
             handler.handshakeFuture().sync();
 
             BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+            int i=0;
+
             while (true) {
-                System.out.print("输入消息：");
-                String msg = console.readLine();
-                if (msg == null) {
+                 System.out.println("发送一条消息.");
+//                String msg = console.readLine();
+                JSONObject json1=new JSONObject();
+                JSONObject json2=new JSONObject();
+                JSONArray array=new JSONArray();
+                json1.put("company","5");
+                json1.put("total",2);
+//                json2.put("r_info_type",1);
+                array.add(JSONObject.parse("{\n" +
+                        "\t\t\"r_info_type\": 5,\n" +
+                        "\t\t\"r_time_i\": 1581137278,\n" +
+                        "\t\t\"r_time_s\": \"2020-02-08 12:47:58\",\n" +
+                        "\t\t\"r_sip_s\": \"192.168.30.1\",\n" +
+                        "\t\t\"r_dip_s\": \"192.168.30.55\",\n" +
+                        "\t\t\"r_mode\": 3,\n" +
+                        "\t\t\"r_info_id\": 14,\n" +
+                        "\t\t\"r_group_id\": 207,\n" +
+                        "\t\t\"r_rule_id\": 60377,\n" +
+                        "\t\t\"r_policy_hit\": 1,\n" +
+                        "\t\t\"r_sport\": 0,\n" +
+                        "\t\t\"r_dport\": 80,\n" +
+                        "\t\t\"r_action\": 1,\n" +
+                        "\t\t\"r_protocol\": 6,\n" +
+                        "\t\t\"r_device\": \"K01\",\n" +
+                        "\t\t\"r_severity\": 2,\n" +
+                        "\t\t\"r_country\": \"中国\",\n" +
+                        "\t\t\"r_province\": \"广东\",\n" +
+                        "\t\t\"r_city\": \"\",\n" +
+                        "\t\t\"r_xffip\": \"\",\n" +
+                        "\t\t\"r_serverid\": \"31D0B524FDCEEFAF4FF90486D3A8D0F0\",\n" +
+                        "\t\t\"r_buff\": \"f, image/x-xbitmap, image/jpeg, image/pjpeg, */*\\r\\nUser-Agent: XXX\\r\\nHost: 192.168.30.55\\r\\nConnection: Keep-Alive \",\n" +
+                        "\t\t\"r_math_sign\": \"User-Agent: XXX\\r\\nHost: 192.168.30.55\\r\\nConnection: Keep-Alive\\r \",\n" +
+                        "\t\t\"r_url\": \"/home.php\",\n" +
+                        "\t\t\"r_hostname\": \"192.168.30.55\"\n" +
+                        "\t}"));
+                array.add(JSONObject.parse("{\n" +
+                        "\t\t\"r_info_type\": 5,\n" +
+                        "\t\t\"r_time_i\": 1581137278,\n" +
+                        "\t\t\"r_time_s\": \"2020-02-08 12:47:58\",\n" +
+                        "\t\t\"r_sip_s\": \"192.168.30.1\",\n" +
+                        "\t\t\"r_dip_s\": \"192.168.30.55\",\n" +
+                        "\t\t\"r_mode\": 3,\n" +
+                        "\t\t\"r_info_id\": 14,\n" +
+                        "\t\t\"r_group_id\": 207,\n" +
+                        "\t\t\"r_rule_id\": 60377,\n" +
+                        "\t\t\"r_policy_hit\": 1,\n" +
+                        "\t\t\"r_sport\": 0,\n" +
+                        "\t\t\"r_dport\": 80,\n" +
+                        "\t\t\"r_action\": 1,\n" +
+                        "\t\t\"r_protocol\": 6,\n" +
+                        "\t\t\"r_device\": \"K01\",\n" +
+                        "\t\t\"r_severity\": 2,\n" +
+                        "\t\t\"r_country\": \"中国\",\n" +
+                        "\t\t\"r_province\": \"广东\",\n" +
+                        "\t\t\"r_city\": \"\",\n" +
+                        "\t\t\"r_xffip\": \"\",\n" +
+                        "\t\t\"r_serverid\": \"31D0B524FDCEEFAF4FF90486D3A8D0F0\",\n" +
+                        "\t\t\"r_buff\": \"f, image/x-xbitmap, image/jpeg, image/pjpeg, */*\\r\\nUser-Agent: XXX\\r\\nHost: 192.168.30.55\\r\\nConnection: Keep-Alive \",\n" +
+                        "\t\t\"r_math_sign\": \"User-Agent: XXX\\r\\nHost: 192.168.30.55\\r\\nConnection: Keep-Alive\\r \",\n" +
+                        "\t\t\"r_url\": \"/home.php\",\n" +
+                        "\t\t\"r_hostname\": \"192.168.30.55\"\n" +
+                        "\t}"));
+                json1.put("data",array);
+
+
+                if (json1 == null) {
                     break;
-                } else if ("bye".equals(msg.toLowerCase())) {
-                    ch.writeAndFlush(new CloseWebSocketFrame());
-                    ch.closeFuture().sync();
-                    break;
-                } else if ("ping".equals(msg.toLowerCase())) {
-                    WebSocketFrame frame = new PingWebSocketFrame(Unpooled.wrappedBuffer(new byte[] { 8, 1, 8, 1 }));
-                    ch.writeAndFlush(frame);
+//                } else if ("bye".equals(msg.toLowerCase())) {
+//                    ch.writeAndFlush(new CloseWebSocketFrame());
+//                    ch.closeFuture().sync();
+//                    break;
+//                } else if ("ping".equals(msg.toLowerCase())) {
+//                    WebSocketFrame frame = new PingWebSocketFrame(Unpooled.wrappedBuffer(new byte[] { 8, 1, 8, 1 }));
+//                    ch.writeAndFlush(frame);
                 } else {
-                    WebSocketFrame frame = new TextWebSocketFrame(msg);
+                    WebSocketFrame frame = new TextWebSocketFrame(json1.toString());
                     ch.writeAndFlush(frame);
                 }
-                System.out.println("休息3秒");
-                Thread.sleep(3000);
+                System.out.println("休息1.5秒");
+                Thread.sleep(1500);
             }
+
+//            while (true) {
+//                System.out.println("第  "+i+"  次输入信息：");
+////                String msg = console.readLine();
+//                String msg="{\"offset\":1,\"serial_num\":\"authcodeHou\"}";
+//                if (msg == null) {
+//                    break;
+//                } else if ("bye".equals(msg.toLowerCase())) {
+//                    ch.writeAndFlush(new CloseWebSocketFrame());
+//                    ch.closeFuture().sync();
+//                    break;
+//                } else if ("ping".equals(msg.toLowerCase())) {
+//                    WebSocketFrame frame = new PingWebSocketFrame(Unpooled.wrappedBuffer(new byte[] { 8, 1, 8, 1 }));
+//                    ch.writeAndFlush(frame);
+//                } else {
+//                    WebSocketFrame frame = new TextWebSocketFrame(msg);
+//                    System.out.println( System.currentTimeMillis());
+//                    ch.writeAndFlush(frame);
+//                }
+//                i++;
+//                if(i==100) {
+//                    System.out.println("休息60000秒");
+//                    Thread.sleep(60000000);
+//                }
+//            }
         } finally {
             group.shutdownGracefully();
         }
